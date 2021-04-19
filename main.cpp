@@ -11,7 +11,6 @@ int main(){
 	cout << "2. Skor" << endl;
 	cout << "3. Cara bermain" << endl;
 	cout << "4. Keluar" << endl;
-	
 	cout << "Masukkan angka : ";
 	cin >> pilihan;
 	
