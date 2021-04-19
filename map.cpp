@@ -208,8 +208,4 @@ void mapSatu(){
 	line(140, 340, 170, 340);
 	line(170, 340, 170, 295);
 	floodfill(160, 300, 1);
-
-
-//	setfillstyle(1, YELLOW);
-//	pieslice(184, 260, 315, 35, 12);
 }
