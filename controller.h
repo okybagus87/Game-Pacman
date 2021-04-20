@@ -26,7 +26,7 @@ public :
               arr[0].x = 20; // digunain di badan pacman
               arr[0].y = 20; // digunain di badan pacman  
               length = 1; // digunain di badan pacman          
-              direction = RIGHT; // mulainya dari kanan
+              direction = RIGHT;
         }
         void drawPACMAN();
         void changeDirTo(int);
@@ -38,7 +38,7 @@ void PACMANBody::drawPACMAN() // badan pacman
 	 
      for(int i=0; i<length ; i++)
      {
-          rectangle(arr[i].x , arr[i].y , arr[i].x+20 , arr[i].y+20);
+          circle(arr[i].x , arr[i].y , 10);
           setfillstyle(SOLID_FILL , YELLOW);
           floodfill(arr[i].x+15 , arr[i].y+15 , YELLOW);
      }
