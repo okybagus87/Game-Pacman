@@ -131,16 +131,6 @@ void mapSatu(){
 	line(430, 370, 430, 335);
 	floodfill(438, 340, 1);
 
-
-
-
-
-
-
-
-
-
-
 	setlinestyle(0, 1, 1);
 	//liniile subtiri - desenare
 
