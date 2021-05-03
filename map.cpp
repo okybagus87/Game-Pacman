@@ -4,14 +4,13 @@
 #include "enemy.h"
 
 using namespace std;
-void enemy1_lvl1();
 void menuMap(){
 	int pilihan;
 
 	cout << "Pilih map yang diinginkan" << endl;
-	cout << "1. asd" << endl;
-	cout << "2. ddd" << endl;
-	cout << "3. aaa" << endl;
+	cout << "1. Map 1" << endl;
+	cout << "2. Map 2" << endl;
+	cout << "3. Map 3" << endl;
 	cout << "Masukkan angka : ";
 	cin >> pilihan;
 	
