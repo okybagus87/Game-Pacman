@@ -23,6 +23,10 @@ void menuMap(){
 void mapSatu(){
 	int gd=DETECT, gm, input;
 	initwindow(1280, 720);
+	
+	while(1){
+		enemy1_lvl1();
+	}
 
 //	line(310, 202, 330, 202);
 	setcolor(1);
