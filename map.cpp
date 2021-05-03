@@ -1,5 +1,3 @@
-#include <iostream>
-#include <graphics.h>
 #include "map.h"
 
 using namespace std;
