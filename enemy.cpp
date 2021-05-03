@@ -3287,4 +3287,3 @@ void enemy1_lvl1(){
    	way=true;
   		
 	}*/
-

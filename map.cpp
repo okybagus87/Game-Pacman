@@ -1,36 +1,35 @@
-#include "map.h"
 #include <iostream>
 #include <graphics.h>
+#include "map.h"
+#include "enemy.h"
 
 using namespace std;
-
+void enemy1_lvl1();
 void menuMap(){
 	int pilihan;
 
 	cout << "Pilih map yang diinginkan" << endl;
-	cout << "1. Map 1" << endl;
-	cout << "2. Map 2" << endl;
-	cout << "3. Map 3" << endl;
+	cout << "1. asd" << endl;
+	cout << "2. ddd" << endl;
+	cout << "3. aaa" << endl;
 	cout << "Masukkan angka : ";
 	cin >> pilihan;
 	
 	if(pilihan == 1){
 		mapSatu();
-		getch();
-	}
+	 }
 }
 
 void mapSatu(){
 	int gd=DETECT, gm, input;
 	initwindow(1280, 720);
-	
-	while(1){
-		enemy1_lvl1();
-	}
 
+	while(1){
+	enemy1_lvl1();
+	}
 //	line(310, 202, 330, 202);
 	setcolor(1);
-	setbkcolor(BLACK);
+	setbkcolor(0);
 	//setlinestyle(0, 1, 3);
 	setfillstyle(1, 1);
 	//liniile groase - desenare;
@@ -135,6 +134,8 @@ void mapSatu(){
 	line(430, 370, 430, 335);
 	floodfill(438, 340, 1);
 
+
+
 	setlinestyle(0, 1, 1);
 	//liniile subtiri - desenare
 
@@ -183,8 +184,6 @@ void mapSatu(){
 	//centru
 	rectangle(395, 235, 245, 205);
 
-
-
 	//dreptunghiuri - jos
 	//#1-dreapta
 	line(470, 295, 520, 295);
@@ -202,4 +201,7 @@ void mapSatu(){
 	line(140, 340, 170, 340);
 	line(170, 340, 170, 295);
 	floodfill(160, 300, 1);
+
+
+	getch();
 }
