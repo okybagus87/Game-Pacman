@@ -39,7 +39,5 @@ void drawPACMAN(); // badan pacman
 void changeDirTo(int newdir); // kotrol gerak pacman
 int update(); // aktif saat bergerak                 
 int controller(); // Menggerakkan object
-int getPosx();
-int getPosy();
 
 #endif                                    
