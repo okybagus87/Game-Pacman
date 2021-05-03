@@ -206,4 +206,4 @@ void mapSatu(){
 	line(170, 340, 170, 295);
 	floodfill(160, 300, 1);
 
-
+}
