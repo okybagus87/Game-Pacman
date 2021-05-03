@@ -1,7 +1,6 @@
 #include "map.h"
 #include <iostream>
 #include <graphics.h>
-#include "enemy.h"
 
 using namespace std;
 
