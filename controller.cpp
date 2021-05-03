@@ -1,4 +1,5 @@
 #include "controller.h"
+#include "enemy.h"
 
 void PACMANBody::drawPACMAN() // badan pacman         
 {
@@ -79,6 +80,7 @@ int PACMANBody::update() // aktif saat bergerak
 
 int controller()
 {
+	
     PACMANBody body;
     int length,count=0;
     bool playing=true;
