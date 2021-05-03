@@ -1,7 +1,10 @@
+#include <iostream>
+#include <graphics.h>
 #include "map.h"
+#include "enemy.h"
+#include "controller.h"
 
 using namespace std;
-
 void menuMap(){
 	int pilihan;
 
@@ -14,24 +17,26 @@ void menuMap(){
 	
 	if(pilihan == 1){
 		mapSatu();
-		getch();
-	}
+	 }
 }
 
 void mapSatu(){
 	int gd=DETECT, gm, input;
 	initwindow(1280, 720);
-	
-	while(1){
-		enemy1_lvl1();
-	}
-
 //	line(310, 202, 330, 202);
 	setcolor(1);
-	setbkcolor(BLACK);
+	setbkcolor(0);
 	//setlinestyle(0, 1, 3);
 	setfillstyle(1, 1);
 	//liniile groase - desenare;
+
+	while(1){
+		controller();
+	}
+
+//	while(1){
+//		enemy1_lvl1();
+//	}
 
 	line(470, 205, 470, 165);//dreapta mid
 	line(470, 165, 545, 165);//dreapta
@@ -133,6 +138,8 @@ void mapSatu(){
 	line(430, 370, 430, 335);
 	floodfill(438, 340, 1);
 
+
+
 	setlinestyle(0, 1, 1);
 	//liniile subtiri - desenare
 
@@ -181,8 +188,6 @@ void mapSatu(){
 	//centru
 	rectangle(395, 235, 245, 205);
 
-
-
 	//dreptunghiuri - jos
 	//#1-dreapta
 	line(470, 295, 520, 295);
@@ -200,4 +205,5 @@ void mapSatu(){
 	line(140, 340, 170, 340);
 	line(170, 340, 170, 295);
 	floodfill(160, 300, 1);
-}
+
+

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <graphics.h>
 #include "map.h"
+#include "enemy.h"
+#include "controller.h"
 using namespace std;
 
 int main(){
