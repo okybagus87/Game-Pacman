@@ -6,7 +6,7 @@ void PACMANBody::drawPACMAN() // badan pacman
      for(int i=0; i<length; i++)
      {
 	 	  setcolor(YELLOW);
-          circle(arr[i].x , arr[i].y , 10);
+          readimagefile()
      }
 }
 
