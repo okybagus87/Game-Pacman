@@ -2,6 +2,7 @@
 #include <graphics.h>
 #include "map.h"
 #include "enemy.h"
+#include "controller.h"
 
 using namespace std;
 void menuMap(){
@@ -22,16 +23,20 @@ void menuMap(){
 void mapSatu(){
 	int gd=DETECT, gm, input;
 	initwindow(1280, 720);
-
-	while(1){
-	enemy1_lvl1();
-	}
 //	line(310, 202, 330, 202);
 	setcolor(1);
 	setbkcolor(0);
 	//setlinestyle(0, 1, 3);
 	setfillstyle(1, 1);
 	//liniile groase - desenare;
+
+	while(1){
+		controller();
+	}
+
+//	while(1){
+//		enemy1_lvl1();
+//	}
 
 	line(470, 205, 470, 165);//dreapta mid
 	line(470, 165, 545, 165);//dreapta
@@ -201,6 +206,4 @@ void mapSatu(){
 	line(170, 340, 170, 295);
 	floodfill(160, 300, 1);
 
-
-	getch();
 }
