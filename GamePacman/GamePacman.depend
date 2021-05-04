@@ -34,7 +34,7 @@
 	"enemy.h"
 	"controller.h"
 
-1620095234 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\main.cpp
+1620097531 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\main.cpp
 	<iostream>
 	<graphics.h>
 	"map.h"
@@ -70,7 +70,13 @@
 	"enemy.h"
 	"map.h"
 
-1618902814 c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\map.h
+1620098347 c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
 
 1620096906 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\foodpallete.cpp
 	<stdio.h>
@@ -80,12 +86,21 @@
 	<dos.h>
 	"spawn.h"
 
-1620097104 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\map.cpp
-	<iostream>
+1620098193 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\map.cpp
+	<stdio.h>
 	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+	"palleteSkor.h"
 	"map.h"
 	"enemy.h"
 	"controller.h"
 
 1620096880 source:c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\palleteskor.cpp
+
+1620098140 c:\users\kysuna\onedrive\documents\github\game-pacman\gamepacman\palleteskor.h
+	<windows.h>
+	<cstdio>
 

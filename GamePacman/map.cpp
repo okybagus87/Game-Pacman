@@ -1,14 +1,7 @@
-#include <stdio.h>
-#include <graphics.h>
-#include<math.h>
-#include<conio.h>
-#include<stdbool.h>
-#include<iostream>
+#include"palleteSkor.h"
 #include "map.h"
 #include "enemy.h"
 #include "controller.h"
-#define BARIS 21
-#define KOLOM 21
 
 using namespace std;
 void menuMap(){
@@ -24,6 +17,15 @@ void menuMap(){
 	if(pilihan == 1){
 		mapSatu();
 	 }
+}
+
+void gotoxy(int x, int y){
+    HANDLE hConsoleOutput;
+    COORD dwCursorPosition;
+    dwCursorPosition.X = x;
+    dwCursorPosition.Y = y;
+    hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleCursorPosition(hConsoleOutput,dwCursorPosition);    //====> memindahkan kursor ke posisi tertentu
 }
 
 void mapSatu(){
