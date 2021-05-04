@@ -1,4 +1,4 @@
-#include<graphics.h>
+/*#include<graphics.h>
 #include<stdio.h>
 #include<iostream>
 #include<conio.h>
@@ -100,3 +100,4 @@ while(true)
 }
 
 }
+*/
