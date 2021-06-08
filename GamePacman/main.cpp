@@ -3,9 +3,13 @@
 #include "map.h"
 #include "enemy.h"
 #include "controller.h"
+#include "palleteSkor.h"
 using namespace std;
 
 int main(){
+
+
+    while(1){
 	int pilihan;
 
 	cout << "Menu Utama" << endl;
@@ -16,9 +20,34 @@ int main(){
 	cout << "Masukkan angka : ";
 	cin >> pilihan;
 
-	if(pilihan == 1){
-		menuMap();
-	}
 
+
+	switch(pilihan)
+	{
+        case 1:
+        menuMap();
+        break;
+
+        case 2:
+        break;
+
+
+        case 3:
+        system("cls");
+        HowToPlay();
+        system("Pause");
+        system("cls");
+        break;
+
+        case 4:
+        exit(1);
+        break;
+
+
+        default:
+            printf("Input dengan benar ");
+            break;
+	}
+    }
     return 0;
 }

@@ -104,3 +104,539 @@
 	<windows.h>
 	<cstdio>
 
+1620095234 source:d:\donlod\gamepacman\controller.cpp
+	"controller.h"
+	"enemy.h"
+
+1620095234 d:\donlod\gamepacman\controller.h
+	<graphics.h>
+
+1619487986 d:\donlod\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<dos.h>
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+
+1620001834 source:d:\donlod\gamepacman\enemy.cpp
+	"enemy.h"
+	"map.h"
+
+1620099521 d:\donlod\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1620096906 source:d:\donlod\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1620099496 source:d:\donlod\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1620098336 source:d:\donlod\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1620098140 d:\donlod\gamepacman\palleteskor.h
+	<windows.h>
+	<cstdio>
+
+1620096880 source:d:\donlod\gamepacman\palleteskor.cpp
+
+1620095234 source:d:\kuliah\semester 2\ppl\gamepacman\controller.cpp
+	"controller.h"
+	"enemy.h"
+
+1620095234 d:\kuliah\semester 2\ppl\gamepacman\controller.h
+	<graphics.h>
+
+1619487986 d:\kuliah\semester 2\ppl\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<dos.h>
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+
+1620001834 source:d:\kuliah\semester 2\ppl\gamepacman\enemy.cpp
+	"enemy.h"
+	"map.h"
+
+1621753825 d:\kuliah\semester 2\ppl\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1620096906 source:d:\kuliah\semester 2\ppl\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1621728014 source:d:\kuliah\semester 2\ppl\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1621755162 source:d:\kuliah\semester 2\ppl\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1620098140 d:\kuliah\semester 2\ppl\gamepacman\palleteskor.h
+	<windows.h>
+	<cstdio>
+
+1620096880 source:d:\kuliah\semester 2\ppl\gamepacman\palleteskor.cpp
+
+1620095236 source:f:\boruto\gamepacman-3\gamepacman\controller.cpp
+	"controller.h"
+	"enemy.h"
+
+1620095236 f:\boruto\gamepacman-3\gamepacman\controller.h
+	<graphics.h>
+
+1619487986 f:\boruto\gamepacman-3\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<dos.h>
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+
+1620001834 source:f:\boruto\gamepacman-3\gamepacman\enemy.cpp
+	"enemy.h"
+	"map.h"
+
+1621753826 f:\boruto\gamepacman-3\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1620096908 source:f:\boruto\gamepacman-3\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1621728016 source:f:\boruto\gamepacman-3\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622196054 source:f:\boruto\gamepacman-3\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622196110 f:\boruto\gamepacman-3\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+
+1622196096 source:f:\boruto\gamepacman-3\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1622363401 source:c:\users\asus\desktop\gamepacman-3\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363082 c:\users\asus\desktop\gamepacman-3\gamepacman\controller.h
+	<graphics.h>
+
+1619487986 c:\users\asus\desktop\gamepacman-3\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<dos.h>
+	<stdio.h>
+	<math.h>
+	<stdbool.h>
+
+1620001834 source:c:\users\asus\desktop\gamepacman-3\gamepacman\enemy.cpp
+	"enemy.h"
+	"map.h"
+
+1621753826 c:\users\asus\desktop\gamepacman-3\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1620096908 source:c:\users\asus\desktop\gamepacman-3\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1621728016 source:c:\users\asus\desktop\gamepacman-3\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622363399 source:c:\users\asus\desktop\gamepacman-3\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622196110 c:\users\asus\desktop\gamepacman-3\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+
+1622253532 source:c:\users\asus\desktop\gamepacman-3\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1622363500 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363082 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\controller.h
+	<graphics.h>
+
+1621753826 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1622419820 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\enemy.cpp
+	<iostream>
+	<graphics.h>
+	"enemy.h"
+	"map.h"
+
+1622424177 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+	<dos.h>
+
+1620096908 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1621728016 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622424210 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622196110 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+
+1622253532 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1622363502 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363084 f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\controller.h
+	<graphics.h>
+
+1621753826 f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1622419822 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\enemy.cpp
+	<iostream>
+	<graphics.h>
+	"enemy.h"
+	"map.h"
+
+1622424178 f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+	<dos.h>
+
+1620096908 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1622424326 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622429172 f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+
+1622430238 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+	"palleteSkor.h"
+
+1622430254 source:f:\latihan\game\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1622363502 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363084 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\controller.h
+	<graphics.h>
+
+1621753826 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1623109124 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\enemy.cpp
+	<iostream>
+	<graphics.h>
+	"enemy.h"
+	"controller.h"
+	"map.h"
+
+1622512125 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+	<dos.h>
+
+1620096908 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1622430404 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+	"palleteSkor.h"
+
+1622429172 c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+
+1623108982 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622430254 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\gamepacman-3 (3)\gamepacman-3 (2)\gamepacman-3\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1622363502 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363084 d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\controller.h
+	<graphics.h>
+
+1623126635 d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1623109126 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\enemy.cpp
+	<iostream>
+	<graphics.h>
+	"enemy.h"
+	"controller.h"
+	"map.h"
+
+1622512126 d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+	<dos.h>
+
+1620096908 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1623114252 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+	"palleteSkor.h"
+
+1623119202 d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+
+1623119402 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\palleteskor.cpp
+	"palleteSkor.h"
+
+1623119158 source:d:\kuliah\semester 2\ppl\selasa 8 juni 2021\gamepacman\map.cpp
+	"palleteSkor.h"
+	"map.h"
+	"enemy.h"
+	"controller.h"
+
+1622363502 source:f:\tugas\matter 2\gamepacman (1)\gamepacman\controller.cpp
+	"controller.h"
+	"map.h"
+
+1622363084 f:\tugas\matter 2\gamepacman (1)\gamepacman\controller.h
+	<graphics.h>
+
+1623119158 f:\tugas\matter 2\gamepacman (1)\gamepacman\map.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<conio.h>
+	<stdbool.h>
+	<iostream>
+
+1623109126 source:f:\tugas\matter 2\gamepacman (1)\gamepacman\enemy.cpp
+	<iostream>
+	<graphics.h>
+	"enemy.h"
+	"controller.h"
+	"map.h"
+
+1622512126 f:\tugas\matter 2\gamepacman (1)\gamepacman\enemy.h
+	<graphics.h>
+	<conio.h>
+	<iostream>
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+	<dos.h>
+
+1620096908 source:f:\tugas\matter 2\gamepacman (1)\gamepacman\foodpallete.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+	"spawn.h"
+
+1623114252 source:f:\tugas\matter 2\gamepacman (1)\gamepacman\main.cpp
+	<iostream>
+	<graphics.h>
+	"map.h"
+	"enemy.h"
+	"controller.h"
+	"palleteSkor.h"
+
+1623119202 f:\tugas\matter 2\gamepacman (1)\gamepacman\palleteskor.h
+	<windows.h>
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+

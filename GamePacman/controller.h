@@ -20,24 +20,24 @@ class PACMANBody
 {
 private:
         POS arr[31]; // untuk ngatur posisi
-        int direction; // untuk ngegerakin 
-        int length; // untuk ngegerakin 
+        int direction; // untuk ngegerakin
+        int length; // untuk ngegerakin
 public :
         PACMANBody()
         {
-              arr[0].x = 320; // digunain di badan pacman
-              arr[0].y = 320; // digunain di badan pacman  
-              length = 1; // digunain di badan pacman          
-              direction = RIGHT; 
+              arr[0].x = 346; // digunain di badan pacman
+              arr[0].y = 547; // digunain di badan pacman
+              length = 1; // digunain di badan pacman
+              direction = RIGHT;
         }
         void drawPACMAN();
         void changeDirTo(int);
-        int update();     
+        int update();
 };
 
-void drawPACMAN(); // badan pacman         
+void drawPACMAN(); // badan pacman
 void changeDirTo(int newdir); // kotrol gerak pacman
-int update(); // aktif saat bergerak                 
+int update(); // aktif saat bergerak
 int controller(); // Menggerakkan object
 
-#endif                                    
+#endif

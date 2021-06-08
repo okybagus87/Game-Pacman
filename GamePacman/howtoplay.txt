@@ -1,0 +1,6 @@
+Cara Bermain
+
+1. Silahkan pilih map yang akan anda pilih untuk dimainkan, dimana disini kami menyediakan 3 map yang bisa dimainkan
+2. Game dapat dimulai dengan mengarahkan pacman ke arah manapun yang anda inginkan dengan menggunakan kanan, kiri, atas, dan bawah pada keyboard
+3. Raih skor dengan memakan pallete tambahan sebanyak mungkin serta, memakan pallete ekstra yang bisa menambah skor anda secara ekstra
+4. Jangan sampai Ghost mengenai pacman , ketika Ghost mengenai pacman maka game akan berakhir

@@ -10,8 +10,13 @@
 #define KOLOM 21
 
 void menuMap();
+
 void mapSatu();
-void line_extrenal();
-void gotoxy();
+
+void mapDua();
+
+void renderWall(int arr[BARIS][KOLOM], int i, int j, int x, int y);
+
+void mapTiga();
 
 #endif
