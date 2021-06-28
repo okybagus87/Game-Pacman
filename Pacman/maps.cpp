@@ -149,9 +149,3 @@ void bawah(int i, int j, int p){
 		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
     }
 }
-// MENAMPULKAN GAMBAR SAAT INGIN KELUAR GUNA KONFORMASI
-void keluar(){
-	readimagefile("assets//img//menu//exitt.jpg",420,240,420+420,240+240);
-	readimagefile("assets//img//menu//no.jpg",470,390,520,440);
-	readimagefile("assets//img//menu//yes.jpg",740,390,790,440);
-}
