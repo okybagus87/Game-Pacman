@@ -1,5 +1,7 @@
 #include"header/header.h" // MENGAMBIL FILE.H DI FOLDER HEADER
 
+void menu_utama();
+
 int main(){
 	initwindow(1280,720,"",0,0);
 	splashscreen(); // MEMANGGIL SPLASHSCREEN
