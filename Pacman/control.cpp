@@ -2,6 +2,7 @@
 
 int A[BRS][KLM];
 int i,j,e,temp,k,temp2;
+void *buff;
 void *map;
 unsigned long size;
 
