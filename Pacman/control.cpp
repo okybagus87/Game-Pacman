@@ -175,3 +175,52 @@ void sc_lv(int l){
 	    delay(1300);
 	}
 }
+
+
+//FUNGSI ENEMY
+
+void DrawGhost(){
+    int area;
+    int gy,gx;
+    area = imagesize(40*gx,40*gy,40+40*gx,40+40*gy);
+    buff = malloc(area);
+    readimagefile("assets//img//game//enemy1.gif",40*gx,40*gy,40+40*gx,40+40*gy);
+    getimage(40*gx,40*gy,40+40*gx,40+40*gy,buff);
+}
+
+
+int kondisi(int px, int py, int gx, int gy){
+    int situasi;
+    px = i;
+    py  = j;
+
+    if((px>=gx)&&(py<=gy)){
+        situasi = 1;
+    }
+    if((px<=gx)&&(py>=gy)){
+        situasi = 2;
+    }
+    if((px<=gx)&&(py<=gy)){
+        situasi = 3;
+    }
+    if((px>=gx)&&(py>=gy)){
+        situasi = 4;
+    }
+    return situasi;
+}
+void moveGhost(int situasi,int gx, int gy){
+    if(situasi = 1){
+        gx++;
+    }
+    if(situasi = 2){
+        gy++;
+    }
+    if(situasi = 3){
+        gx--;
+        gy--;
+    }
+    if(situasi = 4){
+        gx++;
+        gy++;
+    }
+}
