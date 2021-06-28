@@ -177,7 +177,7 @@ void sc_lv(int l){
 }
 
 
-//FUNGSI ENEMY
+//FUNGSI ENEMY (masih belum dapat dijalankan)
 
 void DrawGhost(){
     int area;
