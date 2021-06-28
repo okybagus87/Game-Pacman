@@ -106,7 +106,6 @@ void menu_utama(){
 				}
 			}
 		}else if((x>955 && x<955+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK KELUAR PROGRAM
-			keluar(); // MEMANGGIL KELUAR
 			exit(1);
 		}
 	}
