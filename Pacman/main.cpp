@@ -107,14 +107,7 @@ void menu_utama(){
 			}
 		}else if((x>955 && x<955+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK KELUAR PROGRAM
 			keluar(); // MEMANGGIL KELUAR
-			while(1){
-				getmouseclick(WM_LBUTTONDOWN, x, y);
-				if((x>420 && x<520)&&(y>390 && y<440)){
-					goto menu; // KEMBALI KE MENU
-				}else if((x>740 && x<790)&&(y>390 && y<440)){
-					exit(1);
-				}
-			}
+			exit(1);
 		}
 	}
 }
