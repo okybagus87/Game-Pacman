@@ -113,12 +113,6 @@ void splashscreen(){
 }*/
 
 // MENAMPILKAN GAMBAR UNTUK MENU HOW
-/*void how(int p){
-	if(p==1){
-		readimagefile("assets//img//menu//htp//how.jpg",fullscreen);
-	}else if(p==2){
-		readimagefile("assets//img//menu//htp//how2.jpg",fullscreen);
-	}else if(p==3){
-		readimagefile("assets//img//menu//htp//how3.jpg",fullscreen);
-	}
-}*/
+void how(){
+	readimagefile("assets//img//menu//how1.jpg",fullscreen);
+}
