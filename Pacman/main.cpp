@@ -90,8 +90,8 @@ void menu_utama(){
 			}
 		}else if((x>555 && x<555+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK MENGKLIK MENU HOW
 			while(1){
-				//how(p);
-				readimagefile("assets//img//game//back.jpg",150,600,150+150,50+600);
+				how(); // MEMANGGIL MODUL HOW DARI MENU
+				readimagefile("assets//img//game//back.gif",150,600,150+150,50+600); // UNTUK KEMBALI KE MENU UTAMA
 				getmouseclick(WM_LBUTTONDOWN, x, y);
 				if((x>150 && x<150+150)&&(y>600 && y<650)){ // DAERAH YANG BISA DIJANGKAU UNTUK KEMBALI KE MENU UTAMA
 					goto menu; // KEMBALI KE MENU
