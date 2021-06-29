@@ -180,6 +180,7 @@ void sc_lv(int l){
 
 //FUNGSI ENEMY (masih belum dapat dijalankan)
 
+
 void DrawGhost(){
     int area;
     int gy,gx;
@@ -209,19 +210,31 @@ int kondisi(int px, int py, int gx, int gy){
     }
     return situasi;
 }
-void moveGhost(int situasi,int gx, int gy){
+void moveGhostX(int situasi,int gx, int gy){
     if(situasi = 1){
-        gx++;
+        gx+40;
     }
     if(situasi = 2){
-        gy++;
+        gy-40;
     }
     if(situasi = 3){
-        gx--;
-        gy--;
+        gx-40;
     }
     if(situasi = 4){
-        gx++;
-        gy++;
+        gx+40;
+    }
+}
+void moveGhostY(int situasi,int gx, int gy){
+    if(situasi = 1){
+        gy+40;
+    }
+    if(situasi = 2){
+        gy-40;
+    }
+    if(situasi = 3){
+        gy-40;
+    }
+    if(situasi = 4){
+        gy+40;
     }
 }
