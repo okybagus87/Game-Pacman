@@ -3,9 +3,10 @@
 #include <iostream>
 #include <stdlib.h>
 
-void DrawGhost();
+void DrawGhost(int i, int j, int p);
 int kondisi(int px, int py, int gx, int gy);
-void moveGhost(int situasi,int *gx, int *gy);
+int moveGhostX(int situasi,int *gx, int *gy);
+int moveGhostY(int situasi,int *gx, int *gy);
 
 
 #endif // ENEMY_H_INCLUDED
