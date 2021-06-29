@@ -149,3 +149,14 @@ void bawah(int i, int j, int p){
 		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
     }
 }
+
+
+//Menampilkan Enemy
+void DrawGhost(int i, int j, int p){
+    int area;
+    void *buff;
+    area = imagesize(img_mtrx);
+    buff = malloc(area);
+    readimagefile("assets//img//game//enemy1.gif",img_mtrx);
+}
+
