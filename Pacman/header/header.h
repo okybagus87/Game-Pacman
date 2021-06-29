@@ -11,6 +11,7 @@
 #include"control.h"
 #include"maps.h"
 #include"menu.h"
+#include"enemy.h"
 
 #define SIZEMTRX 40
 #define BRS 720/SIZEMTRX //18
