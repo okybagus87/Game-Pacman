@@ -181,16 +181,6 @@ void sc_lv(int l){
 //FUNGSI ENEMY (masih belum dapat dijalankan)
 
 
-void DrawGhost(){
-    int area;
-    int gy,gx;
-    area = imagesize(40*gx,40*gy,40+40*gx,40+40*gy);
-    buff = malloc(area);
-    readimagefile("assets//img//game//enemy1.gif",40*gx,40*gy,40+40*gx,40+40*gy);
-    getimage(40*gx,40*gy,40+40*gx,40+40*gy,buff);
-}
-
-
 int kondisi(int px, int py, int gx, int gy){
     int situasi;
     px = i;
