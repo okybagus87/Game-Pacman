@@ -2,6 +2,8 @@
 
 int A[BRS][KLM];
 int i,j,e,temp,k,temp2;
+int i_g,j_g,g_e,g_temp,g_k,g_temp2;
+void DrawGhost(int i_g, int j_g, int p_g);
 void *buff;
 void *map;
 unsigned long size;
@@ -181,50 +183,154 @@ void sc_lv(int l){
 //FUNGSI ENEMY (masih belum dapat dijalankan)
 
 
-int kondisi(int px, int py, int gx, int gy){
-    int situasi;
-    px = i;
-    py  = j;
+int checkPosisiPac(int i,int j,int i_g, int j_g){
+    // Timur Laut
+    if ( i>i_g && j<j_g ){
+            if (A[i_g][j_g-1] == 0){j_g--;return j_g;}
+            else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
+    }
+    // Utara
+    else if (i>i_g && j ==j_g){
+        if (A[i_g+1][j_g] == 0){i_g++;return i_g;}
+        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
+        else if (A[i_g][j_g+1] == 0) {j_g++;return j_g;}
+    }
+    //Barat Laut
+     else if (i>i_g && j>j_g ){
+        if (A[i_g+1][j_g] == 0){i_g++;return i_g;}
+        else if (A[i_g][j_g+1] == 0) {j_g++;return j_g;}
+        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
+     }
+     //Barat
+      else if (i == i_g && j > j_g){
+        if (A[i_g][j_g+1] == 0){j_g++;return j_g;}
+        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
+        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
+     }
+     //Barat Daya
+     else if (i < i_g && j>j_g){
+        if (A[i_g][j_g+1] == 0){j_g++;return j_g;}
+        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
+        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
+     }
+     //Selatan
+     else if (i<j_g && j==j_g){
+        if (A[i_g-1][j_g] == 0){i_g--;return i_g;}
+        else if (A[i_g][j_g-1] == 0) {j_g--;return i_g;}
+        else if (A[i_g][i_g+1] == 0) {j_g++;return j_g;}
+     }
+     //Tenggara
+     else if (i<i_g && j<j_g){
+        if (A[i_g-1][j_g] == 0){i_g--;return i_g;}
+        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
+        else if (A[i_g][j_g+1] == 0) {i_g++;return j_g;}
+     }
+     //Timur
+     else if (i==i_g && j<j_g){
+        if (A[i_g][j_g-1] == 0){j_g--;return j_g;}
+        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
+        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
+     }
+}
 
-    if((px>=gx)&&(py<=gy)){
-        situasi = 1;
+
+int YGhostDir(int i,int i_g,int j_g, int j){
+
+    if (( j_g != j)&& (i > i_g)){
+        i_g++;
+    } else if (( j_g != j)&& (i < i_g)){
+        i_g--;
+    }else if (( j_g == j)&& (i > i_g)){
+        i_g++;
+    }else if (( j_g == j)&& (i < i_g)){
+        i_g--;
     }
-    if((px<=gx)&&(py>=gy)){
-        situasi = 2;
-    }
-    if((px<=gx)&&(py<=gy)){
-        situasi = 3;
-    }
-    if((px>=gx)&&(py>=gy)){
-        situasi = 4;
-    }
-    return situasi;
+    return i_g;
 }
-void moveGhostX(int situasi,int gx, int gy){
-    if(situasi = 1){
-        gx+40;
+
+int XGhostDir(int i,int i_g, int j, int j_g){
+    if ((i != i_g)&&(j > j_g)){
+        j_g++;
+    } else if ((i != i_g)&&(j < j_g)){
+        j_g--;
+    }else if ((i == i_g) && (j > j_g)){
+        j_g++;
+    }else if ((i == i_g) && (j < j_g)){
+        j_g--;
     }
-    if(situasi = 2){
-        gy-40;
+    return j_g;
+}
+
+
+void Glimit(){
+	bool g_up,g_down,g_right,g_left;
+	if(A[i_g-1][j_g]==0 || A[i_g-1][j_g]==5 || A[i_g+-1][j_g]==6 || A[i_g-1][j_g]==10 ){
+		g_up = true;
+	}else{
+        g_up = false;
+	}
+
+	if(A[i_g+1][j_g]==0 || A[i_g+1][j_g]==5 || A[i_g+1][j_g]==6 || A[i_g+1][j_g]==10 ){
+		g_down = true;
+	}else{
+        g_down = false;
+	}
+	if(A[i_g][j_g-1]==0 || A[i_g][j_g-1]==5 || A[i_g][j_g-1]==6 || A[i_g][j_g-1]==10){
+		g_left = true;
+	}else{
+	    g_left = false;
     }
-    if(situasi = 3){
-        gx-40;
+
+	if(A[i_g][j_g+1]==0 || A[i_g][j_g+1]==5 || A[i_g][j_g+1]==6 || A[i_g][j_g+1]==10){
+		g_right = true;
+	}else{
+	    g_right = false;
     }
-    if(situasi = 4){
-        gx+40;
+	Gmove(g_up,g_down,g_right,g_left);
+}
+void Gmove(bool g_up, bool g_down, bool g_left, bool g_right){
+	if(g_up){
+        YGhostDir(i,i_g, j,j_g);
+    }if(g_down){
+        YGhostDir(i,i_g, j,j_g);
+	}if(g_right){
+        }XGhostDir(i,i_g,j,j_g);
+    if(g_left){
+        XGhostDir(i,i_g,j,j_g);
     }
 }
-void moveGhostY(int situasi,int gx, int gy){
-    if(situasi = 1){
-        gy+40;
-    }
-    if(situasi = 2){
-        gy-40;
-    }
-    if(situasi = 3){
-        gy-40;
-    }
-    if(situasi = 4){
-        gy+40;
-    }
+void Gmovement(int l){
+    bool g_up,g_down,g_right,g_left;
+	A[i_g][j_g]=2;
+	if(A[i_g][j_g]==2){
+		Gceksprite(k, i, j);
+		Gmove(g_up,g_down,g_left,g_right);
+		A[i_g][j_g]=temp;
+	}
+	tempMaps(  temp, i_g, j_g);
+}
+void Gceksprite(int Gsprite, int baris, int kolom){
+	if(Gsprite==0){
+		if(temp == 0 || temp2 ==0){
+			DrawGhost(baris,kolom,1);
+		}
+	}
+}
+void Gtempp(){
+	temp2 = temp;
+	temp = A[i_g][j_g];
+	if(temp == 5){
+		temp = 0;
+	}else if (g_temp == 6){
+	    temp = 0;
+	}
+}
+void Gmaping(){
+	for(i_g=0;i_g<BRS;i_g++){
+		for(j_g=0;j_g<KLM;j_g++){
+			maps(A[i_g][j_g],i_g,j_g);
+		}
+	}
+	i_g=8;
+	j_g=8;
 }
