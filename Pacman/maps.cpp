@@ -152,11 +152,12 @@ void bawah(int i, int j, int p){
 
 
 //Menampilkan Enemy
-void DrawGhost(int i, int j, int p){
-    int area;
-    void *buff;
-    area = imagesize(img_mtrx);
-    buff = malloc(area);
-    readimagefile("assets//img//game//enemy1.gif",img_mtrx);
+void DrawGhost(int i_g, int j_g, int p_g){
+    if(p_g == 1){
+        readimagefile("assets//img//game//enemy1.jpg", Gimg_mtrx);
+		delay(10);
+		readimagefile("assets//img//game//enemy1.jpg", Gimg_mtrx);
+		delay(10);
+		readimagefile("assets//img//game//enemy1.jpg", Gimg_mtrx);
+    }
 }
-
