@@ -16,6 +16,7 @@
 
 #include "display.h" //mengatur display dari halaman utama, game over, dan juga pemilihan menu
 #include "PalleteSkorPacman.h" //mengorganisir pallete
+#include "sound.h" //pengaturan suara game
 
 
 using namespace std;
