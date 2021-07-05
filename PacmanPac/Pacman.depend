@@ -1,0 +1,140 @@
+# depslib dependency file v1.0
+1624865632 source:d:\semua kodingan\c++\ppl2\pacman\control.cpp
+	"header/header.h"
+
+1624864842 d:\semua kodingan\c++\ppl2\pacman\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"menu.h"
+
+1624864731 d:\semua kodingan\c++\ppl2\pacman\header\control.h
+
+1624858031 d:\semua kodingan\c++\ppl2\pacman\header\maps.h
+
+1624858030 d:\semua kodingan\c++\ppl2\pacman\header\menu.h
+
+1624865555 source:d:\semua kodingan\c++\ppl2\pacman\main.cpp
+	"header/header.h"
+
+1624857513 source:d:\semua kodingan\c++\ppl2\pacman\maps.cpp
+	"header/header.h"
+
+1624855489 source:d:\semua kodingan\c++\ppl2\pacman\menu.cpp
+	"header/header.h"
+
+1624936127 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\maps.cpp
+	"header/header.h"
+
+1624933702 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"enemy.h"
+	"menu.h"
+
+1624866742 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\header\control.h
+
+1624867103 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\header\maps.h
+
+1624867165 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\header\menu.h
+
+1624867086 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\menu.cpp
+	"header/header.h"
+
+1624948061 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\main.cpp
+	"header/header.h"
+
+1624939645 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\control.cpp
+	"header/header.h"
+
+1624950496 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacman\header\enemy.h
+	<iostream>
+	<stdlib.h>
+
+1625445974 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\control.cpp
+	"header/header.h"
+
+1625362756 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"enemy.h"
+	"menu.h"
+
+1624866742 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\header\control.h
+
+1624867103 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\header\maps.h
+
+1625436604 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\header\enemy.h
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1624867165 c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\header\menu.h
+
+1625417022 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\main.cpp
+	"header/header.h"
+
+1625418259 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\maps.cpp
+	"header/header.h"
+
+1624867086 source:c:\elemen aing\formalitas\sem 2\proyek 2\uts\final\pacmanpac\menu.cpp
+	"header/header.h"
+
+1624867088 source:d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\menu.cpp
+	"header/header.h"
+
+1625362758 d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"enemy.h"
+	"menu.h"
+
+1624866744 d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\header\control.h
+
+1624867104 d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\header\maps.h
+
+1625436606 d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\header\enemy.h
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1624867166 d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\header\menu.h
+
+1625445976 source:d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\control.cpp
+	"header/header.h"
+
+1625529101 source:d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\main.cpp
+	"header/header.h"
+
+1625488255 source:d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\maps.cpp
+	"header/header.h"
+
