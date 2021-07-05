@@ -14,6 +14,10 @@
 #define fullscreen 0,0,getmaxx(),getmaxy()
 
 
+#include "display.h" //mengatur display dari halaman utama, game over, dan juga pemilihan menu
+#include "PalleteSkorPacman.h" //mengorganisir pallete
+
+
 using namespace std;
 
 
