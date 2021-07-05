@@ -9,6 +9,15 @@
 #define BARIS 21
 #define KOLOM 21
 
+struct Node{
+    int data;
+    Node *right, *down;
+};
+
+Node* construct(int arr[BARIS][KOLOM], int i, int j, int baris, int kolom);
+
+void tampilLinkedList(Node *head);
+
 void menuMap();
 
 void mapSatu();
