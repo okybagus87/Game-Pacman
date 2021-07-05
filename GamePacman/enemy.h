@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <iostream>
 #include <stdlib.h>
-#include<stdbool.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <math.h>
 #include <dos.h>
@@ -13,11 +13,16 @@
 #define BARIS 21
 #define KOLOM 21
 
-
 using namespace std;
-void Enemy1_lvl1();
-int FindPac(int x, int y);
+struct node{
+	int x;
+	int y;
+	int arah;
+	struct node *next;
+	struct node *prev;
+};
 
-
+void drawEnemy(char Ghost[]);
+void FindPac(int x, int y);
 
 #endif

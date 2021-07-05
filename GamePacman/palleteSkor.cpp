@@ -39,13 +39,15 @@ void HowToPlay()
 
 }
 
+
 int AturSkor(int eat)
 {
     int skor;
-    if(eat==1){
+    if(eat==1)
+    {
         skor=skor+1;
-    }
-    else if(eat == 2){
+    }else if(eat == 2)
+    {
         skor = skor+10;
     }
 
@@ -53,21 +55,3 @@ int AturSkor(int eat)
 }
 
 
-void renderPellet(int arr[BARIS][KOLOM], int i, int j, int x, int y){
-    int ranpos = RandomPos();
-    if (arr[i][j] == 4 && ranpos == 4){
-        TampilBurger(x,y);
-    }
-    else if (arr[i][j] == 6 && ranpos == 6){
-        TampilBurger(x,y);
-    }
-    else if (arr[i][j] == 8 && ranpos == 8){
-        TampilBurger(x,y);
-    }
-    else if (arr[i][j] == 10 && ranpos == 10){
-        TampilBurger(x,y);
-    }
-    else if(arr[i][j] == 0){
-        TampilFood(x,y);
-    }
-}
