@@ -16,5 +16,33 @@ void menu_awal() //BUTTON DI MAIN DISPLAY
     readimagefile("image/display/exit_button.jpg",x,y,167+x,100+y);
 }
 
+void menu_utama() //MAIN DISPLAY
+{
+    int x;
+    int y;
+    //int ltemp;
+   // int lv = 1;
+   // int p = 1;
+    menu:
+    soundmenu();
+    menu_awal();
+    while(1)
+    {
+
+        getmouseclick(WM_LBUTTONDOWN,x,y);
+        if((x>255 && x<255+167) && (y>500 && y<600)){  //button 1
+            cleardevice();
+            soundPlayGame();
+            tampilaja();
+            getch();
+            cleardevice();
+            goto menu;
+
+        }
+        }
+    }
+
+}
+
 
 
