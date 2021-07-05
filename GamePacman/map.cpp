@@ -34,10 +34,38 @@ void menuMap(){
     SetConsoleCursorPosition(hConsoleOutput,dwCursorPosition);    //====> memindahkan kursor ke posisi tertentu
 }*/
 
+Node* construct(int arr[BARIS][KOLOM], int i, int j, int baris, int kolom){
+    if(i > baris - 1 || j > baris - 1){
+        return 0;
+    }
+
+    Node *temp = new Node();
+    temp->data = arr[i][j];
+    temp->right = construct(arr, i, j+1, baris, kolom);
+    temp->down = construct(arr, i, j+1, baris, kolom);
+    return temp;
+}
+
+void tampilLinkedList(Node *head){
+    Node *Rp;
+    Node *Dp = head;
+
+    while(Dp){
+        Rp = Dp;
+
+        while(Rp){
+            cout << Rp->data << " ";
+            Rp = Rp->right;
+        }
+        cout << "\n";
+        Dp = Dp->down;
+    }
+}
+
 void mapSatu(){
 	int gd = DETECT,gm;
   //  initgraph(&gd,&gm,"D:\\1111\\tesPallete1\\pallete");
-    initwindow(1200,800,"MAZE");
+    //initwindow(1200,800,"MAZE");
 
                     //    0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,18 ,19
     int arr[BARIS][KOLOM]=  {
@@ -63,7 +91,7 @@ void mapSatu(){
         { 9 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 2 }, // 19
 
     };
-    int x,y;
+    /*int x,y;
     x = 0; y = 0;
     for (int i = 0; i < 21; i++){
         for (int j = 0; j < 21; j++){
@@ -77,7 +105,9 @@ void mapSatu(){
     for(;;){
     Enemy1_lvl1();
     controller();
-    }
+    }*/
+    Node *head = construct(arr, 0, 0, BARIS, KOLOM);
+    tampilLinkedList(head);
     getch();
 
 }
