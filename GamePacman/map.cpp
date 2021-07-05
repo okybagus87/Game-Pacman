@@ -35,7 +35,7 @@ void menuMap(){
 }*/
 
 Node* construct(int arr[BARIS][KOLOM], int i, int j, int baris, int kolom){
-    if(i > baris - 1 || j > baris - 1){
+    if(i > kolom - 1 || j > baris - 1){
         return 0;
     }
 
