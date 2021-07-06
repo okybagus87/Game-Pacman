@@ -114,7 +114,6 @@ void ceksprite(int sprite, int baris, int kolom){
 
 // MENUKAR / MENGUBAH GAMBAR KETIKA TELAH MEMAKAN PELET ATAUPUN SUPLEMEN
 void tempp(){
-	temp2 = temp;
 	temp = A[i][j];
 	if(temp == 5){
 		temp = 0;
