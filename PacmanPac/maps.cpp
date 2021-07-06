@@ -39,7 +39,7 @@ int maps_level(int l, int a, int b){
 		 {1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1},
 		 {1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1},
 		 {1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1},
-		 {1, 5, 5, 5, 5, 5, 5, 5, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 5, 1},
+		 {1, 5, 5, 5, 5, 5, 5, 5, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 5, 5, 5, 5, 5, 5, 5, 1},
 		 {1, 5, 1, 1, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 1, 1, 5, 1},
 		 {1, 5, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 1, 1, 5, 1},
 		 {1, 5, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5, 5, 1, 1, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 5, 1},
@@ -115,37 +115,37 @@ void pelet(int i, int j){
 // MENAMPILKAN GAMBAR KETIKA PACMAN KE SAMPING
 void samping(int i, int j, int p){
 	if(p==1){
-		readimagefile("assets//img//game//player//move//yellow (1).gif", img_mtrx);
+		readimagefile("assets//img//game//player//move//kanan2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow (1).gif", img_mtrx);
+		readimagefile("assets//img//game//player//move//kanan2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow (1).gif", img_mtrx);
+		readimagefile("assets//img//game//player//move//kanan2.gif", img_mtrx);
 	}else if(p==2){
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//kiri2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//kiri2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//kiri2.gif", img_mtrx);
 	}
 }
 // MENAMPILKAN GAMBAR SAAT PACMAN KE ATAS
 void atas(int i, int j, int p){
 	if(p==3){
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//atas2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//atas2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//atas2.gif", img_mtrx);
 	}
 }
 // MENAMPILKAN GAMBAR SAAT PACMAN KE BAWAH
 void bawah(int i, int j, int p){
     if(p==4){
-        readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+        readimagefile("assets//img//game//player//move//bawah2.gif", img_mtrx);
         delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//bawah2.gif", img_mtrx);
 		delay(10);
-		readimagefile("assets//img//game//player//move//yellow.jpg", img_mtrx);
+		readimagefile("assets//img//game//player//move//bawah2.gif", img_mtrx);
     }
 }
 
