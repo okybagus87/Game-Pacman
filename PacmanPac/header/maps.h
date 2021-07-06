@@ -12,6 +12,5 @@ void atas(int i, int j, int p); // GAMBAR UNTUK PACMAN KE ATAS
 void samping(int i, int j, int p); // GAMBAR UNTUK PACMAN KE SAMPING
 void bawah(int i, int j, int p); // GAMBAR UNTUK PACMAN KE BAWAH
 void pelet(int i, int j); // GAMBAR UNTUK PELET
-void keluar(); // GAMBAR UNTUK KONFIRMASI MAU KELUAR TIDAK
 
 //#endif
