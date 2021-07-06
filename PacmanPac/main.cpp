@@ -94,7 +94,7 @@ void menu_utama(){
 			}
 		}else if((x>555 && x<555+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK MENGKLIK MENU HOW
 			while(1){
-				//how(p);
+				how(p);
 				readimagefile("assets//img//game//back.jpg",150,600,150+150,50+600);
 				getmouseclick(WM_LBUTTONDOWN, x, y);
 				if((x>150 && x<150+150)&&(y>600 && y<650)){ // DAERAH YANG BISA DIJANGKAU UNTUK KEMBALI KE MENU UTAMA
@@ -110,15 +110,7 @@ void menu_utama(){
 				}
 			}
 		}else if((x>955 && x<955+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK KELUAR PROGRAM
-			keluar(); // MEMANGGIL KELUAR
-			while(1){
-				getmouseclick(WM_LBUTTONDOWN, x, y);
-				if((x>420 && x<520)&&(y>390 && y<440)){
-					goto menu; // KEMBALI KE MENU
-				}else if((x>740 && x<790)&&(y>390 && y<440)){
-					exit(1);
-				}
-			}
+			exit(1);
 		}
 	}
 }
