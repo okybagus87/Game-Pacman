@@ -159,9 +159,3 @@ void DrawGhost(int i_g, int j_g, int p_g){
 		readimagefile("assets//img//game//enemy1.jpg", Gimg_mtrx);
     }
 }
-// MENAMPULKAN GAMBAR SAAT INGIN KELUAR GUNA KONFORMASI
-void keluar(){
-	readimagefile("assets//img//menu//exitt.jpg",420,240,420+420,240+240);
-	readimagefile("assets//img//menu//no.jpg",470,390,520,440);
-	readimagefile("assets//img//menu//yes.jpg",740,390,790,440);
-}
