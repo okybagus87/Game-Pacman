@@ -4,7 +4,7 @@
 void menu_awal(); // MENAMPILKAN MENU UTAMA
 void splashscreen(); // MENAMPILKAN SPCLASHCREEN
 void about(); // MENAMPILKAN MENU ABOUT US
-void how(int p); // MENAMPILKAN MENU HOW
+void how(); // MENAMPILKAN MENU HOW
 void milih_maps(); // MENAMPILKAN MILIH MAPS
 
 //#endif

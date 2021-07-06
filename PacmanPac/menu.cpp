@@ -4,16 +4,16 @@
 void menu_awal(){
 	int x, y;
    	readimagefile("assets//img//menu//bekron.jpg",fullscreen);
-	x= 155;
+	x= 185;
    	y= 430;
 	readimagefile("assets//img//menu//play.gif",x,y,167+x,100+y);
-	x=355;
+	x=385;
 	readimagefile("assets//img//menu//highscore.gif",x,y,167+x,100+y);
-	x=555;
+	x=585;
 	readimagefile("assets//img//menu//how.gif",x,y,167+x,100+y);
-	x=755;
+	x=785;
 	readimagefile("assets//img//menu//aboutus.gif",x,y,167+x,100+y);
-	x=955;
+	x=985;
 	readimagefile("assets//img//menu//exit.gif",x,y,167+x,100+y);
 }
 
@@ -21,7 +21,7 @@ void menu_awal(){
 void milih_maps(){
     int x, y;
     readimagefile("assets//img//menu//Pilih Maps.jpg",fullscreen);
-    x= 400;
+    x= 430;
    	y= 300;
 	readimagefile("assets//img//menu//maps1.gif",x,y,500+x,100+y);
 	y=400;

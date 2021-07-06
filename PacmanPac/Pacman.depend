@@ -176,3 +176,41 @@
 1624867088 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\menu.cpp
 	"header/header.h"
 
+1625534657 source:d:\clone github\game-pacman\pacmanpac\control.cpp
+	"header/header.h"
+
+1625534657 d:\clone github\game-pacman\pacmanpac\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"enemy.h"
+	"menu.h"
+
+1625534657 d:\clone github\game-pacman\pacmanpac\header\control.h
+
+1625534657 d:\clone github\game-pacman\pacmanpac\header\maps.h
+
+1625534657 d:\clone github\game-pacman\pacmanpac\header\enemy.h
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1625534892 d:\clone github\game-pacman\pacmanpac\header\menu.h
+
+1625534657 source:d:\clone github\game-pacman\pacmanpac\maps.cpp
+	"header/header.h"
+
+1625535267 source:d:\clone github\game-pacman\pacmanpac\main.cpp
+	"header/header.h"
+
+1625534657 source:d:\clone github\game-pacman\pacmanpac\menu.cpp
+	"header/header.h"
+

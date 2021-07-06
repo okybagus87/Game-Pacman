@@ -2,7 +2,7 @@
 void menu_utama();
 
 int main(){
-	initwindow(1400,720,"",0,0);
+	initwindow(1360,720,"",0,0);
 	splashscreen(); // MEMANGGIL SPLASHSCREEN
 	delay(600);
 	menu_utama(); // MEMANGGIL MENU UTAMA
@@ -94,8 +94,8 @@ void menu_utama(){
 			}
 		}else if((x>555 && x<555+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK MENGKLIK MENU HOW
 			while(1){
-				how(p);
-				readimagefile("assets//img//game//back.jpg",150,600,150+150,50+600);
+				how();
+				readimagefile("assets//img//menu//back.gif",150,600,150+150,50+600);
 				getmouseclick(WM_LBUTTONDOWN, x, y);
 				if((x>150 && x<150+150)&&(y>600 && y<650)){ // DAERAH YANG BISA DIJANGKAU UNTUK KEMBALI KE MENU UTAMA
 					goto menu; // KEMBALI KE MENU
