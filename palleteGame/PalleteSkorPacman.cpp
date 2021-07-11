@@ -165,7 +165,7 @@ void map_view(sprite *s, List L){
                 P2=Next(P2);
             }
             x = 150;
-            y = y + 50;
+            y = y + 43;
             printf ("\n");
             P1=baris(P1);
         }
