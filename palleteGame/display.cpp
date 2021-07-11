@@ -35,6 +35,21 @@ void menu_awal() //BUTTON DI MAIN DISPLAY
     readimagefile("image/display/exit_button.jpg",x,y,167+x,100+y);
 }
 
+void start_loading()
+{
+    readimagefile("image/display/loadnol.jpg",fullscreen);
+    delay(1500);
+    readimagefile("image/display/loadsatu.jpg",fullscreen);
+    delay(1500);
+    readimagefile("image/display/loaddua.jpg",fullscreen);
+    delay(1500);
+    readimagefile("image/display/loadtiga.jpg",fullscreen);
+    delay(1500);
+    readimagefile("image/display/endload.jpg",fullscreen);
+    delay(1500);
+   // cleardevice();
+}
+
 void menu_utama() //MAIN DISPLAY
 {
     int x;
