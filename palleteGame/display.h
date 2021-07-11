@@ -21,6 +21,7 @@ void menu_awal();
     berisi tampilan dari main berupa tombol
 */
 void menu_utama();
+void start_loading();
 
 
 #endif // DISPLAY_H_INCLUDED
