@@ -164,7 +164,7 @@ void Makelist2(List *L1 , int lv){
                    {
                             if(i==1 || i==b)
                             {
-                                nilai = 2;
+                                nilai = 2; 
                             }else if(j==1 || j==k)
                             {
                                 nilai = 2;
