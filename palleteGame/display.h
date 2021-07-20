@@ -13,6 +13,7 @@ typedef struct permainan{
 }game;
 
 game *buildGame(int ukuran,int lebar,int tinggi);
+void DisplayPlayGame();
 
 game startGame(game *p);
 
