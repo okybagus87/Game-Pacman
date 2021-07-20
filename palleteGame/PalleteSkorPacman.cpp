@@ -1,8 +1,15 @@
 #include"PalleteSkorPacman.h"
 
-int Random_Position(int angka)
+int RandomPos()
 {
-    return 1;
+    int i, s;
+    srand(time(NULL));
+    for(i = 0; i < 450; i++) {
+
+        s = (rand() % 4) * 2 + 4 ;
+        //printf(" %d ",s);
+    }
+      return s;
 }
 
 
