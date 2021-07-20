@@ -208,7 +208,32 @@ void Makelist2(List *L1 , int lv){
                             }else if((i>=6 && i<=16)&& j==17)
                             {
                                 nilai =2;
-                            }else
+                            }else if(i==3&&j==5)
+                            {
+                                nilai=4;
+                            }else if(i==3&&j==17)
+                            {
+                                nilai=6;
+                            }else if(i==10&&j==11)
+                            {
+                                nilai=8;
+                            }else if(i==7&&j==2)
+                            {
+                                nilai=10;
+                            }else if(i==10&&j==8)
+                            {
+                                nilai=4;
+                            }else if(i==17&&(j==17||j==19))
+                            {
+                                nilai=6;
+                            }else if(j==18 &&(i==15||i==8))
+                            {
+                                nilai=8;
+                            }else if(i==19&&j==19)
+                            {
+                                nilai=10;
+                            }
+                            else
                             {
                                 nilai =0;
                             }
