@@ -18,6 +18,23 @@ game startGame(game *p)
     initwindow(p->lebarWindow,p->tinggiWindow);
     menu_utama();
 }
+void DisplayPlayGame()
+{
+    int x;
+    int y;
+    readimagefile("image/display/PlayWalpaper.jpeg",fullscreen);
+    x = 100;
+    y = 200;
+    readimagefile("image/display/but1.jpg",x,y,167+x,100+y);
+    x = 500;
+    readimagefile("image/display/but2.jpg",x,y,167+x,100+y);
+    x = 900;
+    readimagefile("image/display/but3.jpg",x,y,167+x,100+y);
+    x = 500;
+    y = 400;
+    readimagefile("image/display/exit_button.jpg",x,y,167+x,100+y);
+  
+}
 
 void menu_awal() //BUTTON DI MAIN DISPLAY
 {
