@@ -7,7 +7,7 @@ int RandomPos()
     for(i = 0; i < 450; i++) {
 
         s = (rand() % 4) * 2 + 4 ;
-        //printf(" %d ",s);
+       
     }
       return s;
 }
@@ -99,19 +99,14 @@ void map_view(sprite *s, List L){
                     //readimagefile("gambar//wall.jpg",x,y,x+gridSize,y+gridSize);
                     putimage(x,y,s->WallMap,COPY_PUT);
                 }else if(Info(P2) == 0){
-                    //readimagefile("gambar//pellet.jpg",x,y,x+gridSize,y+gridSize);
+                  
                     putimage(x,y,s->Food,COPY_PUT);
                 }else if (Info(P2) == 4){
-                    //readimagefile("gambar//bonus.gif",x,y,x+gridSize,y+gridSize);
+                
                     putimage(x,y,s->bonus,COPY_PUT);
                 }else if (Info(P2)== 5){
                     putimage(x,y,s->pacman,COPY_PUT);
                 }
-                /*else if(Info(P2) == 6){
-                    putimage(x,y,pick->power_pelet,COPY_PUT);
-                }else if(Info(P2) == 8){
-                    putimage(x,y,pick->bonus,COPY_PUT);
-                }*/
                 x += 50;
                 printf ("%d ",Info(P2));
                 P2=Next(P2);
