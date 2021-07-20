@@ -295,6 +295,114 @@ void Makelist2(List *L1 , int lv){
                             {
                                 nilai = 0;
                             }
+                    } 
+                    /*Map Level Tinggi*/
+                    else if(lv == 3)
+                    {
+                        if(i==1 || i==b)
+                        {
+                            nilai = 2;
+                        }else if(j==1 || j==k)
+                        {
+                            nilai =2;
+                        }else if((i<=7 && i>=4) && j==8)
+                        {
+                            nilai =2;
+                        }else if((j<=12&&j>=8)&&i==4)
+                        {
+                            nilai =2;
+                        }else if((i<=7&&i>=4)&&j==12)
+                        {
+                            nilai=2;
+                        }else if((i<=7&&i>=4)&&j==27)
+                        {
+                            nilai=2;
+                        }else if((j<=7&&j>=31)&&i==4)
+                        {
+                            nilai=2;
+                        }else if((i<=7&&i>=4)&&j==31)
+                        {
+                            nilai=2;
+                        }else if((j<=31&&j>=27)&&i==4)
+                        {
+                            nilai=2;
+                        }
+                        else if((i<=10&&i>=7)&&j==18)
+                        {
+                            nilai=2;
+                        }else if((i<=10&&i>=7)&&j==21)
+                        {
+                            nilai =2;
+                        }else if((j<=18&&j>=12)&&i==10)
+                        {
+                            nilai =2;
+                        }else if((j<=27&&j>=21)&&i==10)
+                        {
+                            nilai=2;
+                        }else if((i<=12&&i>=10)&&j==12)
+                        {
+                            nilai=2;
+                        }else if((i<=12&&i>=10)&&j==27)
+                        {
+                            nilai=2;
+                        }else if((j<=12&&j>=4)&&i==12)
+                        {
+                            nilai=2;
+                        }else if((j<=35&&j>=27)&&i==12)
+                        {
+                            nilai=2;
+                        }else if((i<=18&&i>=12)&&j==7)
+                        {
+                            nilai=2;
+                        }else if((i<=18&&i>=12)&&j==34)
+                        {
+                            nilai=2;
+                        }else if((j<=15&&j>=11)&&i==16)
+                        {
+                            nilai=2;
+                        }else if((i<=16&&i>=14)&&j==15)
+                        {
+                            nilai=2;
+                        }else if((i<=18&&i>=14)&&j==17)
+                        {
+                            nilai=2;
+                        }else if((j<=13&&j>=11)&&i==18)
+                        {
+                            nilai=2;
+                        }else if((j<=17&&j>=15)&&i==18)
+                        {
+                            nilai=2;
+                        }else if((i<=20&&i>=18)&&j==13)
+                        {
+                            nilai=2;
+                        }else if((i<=20&&i>=18)&&j==15)
+                        {
+                            nilai=2;
+                        }else if((i<=18&&i>=14)&&j==22)
+                        {
+                            nilai=2;
+                        }else if((j<=24&&j>=22)&&i==18)
+                        {
+                            nilai=2;
+                        }else if((j<=28&&j>=26)&&i==18)
+                        {
+                            nilai=2;
+                        }else if((i<=16&&i>=14)&&j==24)
+                        {
+                            nilai=2;
+                        }else if((j<=28&&j>=24)&&i==16)
+                        {
+                            nilai=2;
+                        }else if((i<=20&&i>=18)&&j==24)
+                        {
+                            nilai=2;
+                        }else if((i<=20&&i>=18)&&j==26)
+                        {
+                            nilai=2;
+                        }
+                        else{
+                            nilai=0;
+                        }
                     }
  
                  
