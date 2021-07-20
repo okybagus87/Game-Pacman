@@ -74,67 +74,6 @@ sprite *sprite_create(int gridSize)
     return s;
 }
 
-void Makelist(List *L1 , int lv){
-    List L2;
-    int i,j,b,k;
-    infotype nilai;
-    address P1,P2,down;
-
-    b = 21;
-    k = 20;
-
-        for(i=1;i<=b;i++){
-            CreateList(&L2);
-            for(j=1;j<=k;j++){
-                if(lv == 1){
-                    //level easy
-                    //Wall
-                        if((i == 4 && j <= 7) || (i == 16 && j<= 7) || (j == 1 && i > 3 && i < 17) || (j == 7 && i > 3 && i < 17)){ //border kotak luar
-                            nilai = 2;
-                        }else if((i==6 || i ==14) && (j==3 || j==5 )){ //area wall baris 6 dan 14
-                            nilai = 2;
-                        }else if((i==7 || i==13) && (j>=3 && j<=5)){ //area wall baris 7 dan 13
-                            nilai = 2;
-                        }else if((i==9 || i==11 ) && (j==3 || j==5)){ //area wall baris 9 dan 11
-                            nilai = 2;
-                        }else if((i==10 && j==4)){ //area wall baris 10
-                            nilai = 2;
-                    //Food
-                        }else if(i==10 && (j==3 || j==5)){  //buah bonus
-                            nilai = 4;
-                    //no render
-                        }else if((i <= 3 || i >= 17) && (j >= 1 || j == 20)){
-                            nilai = 1;
-                        }else if((i >=4 || i <= 16) && (j >= 8 || j == 21)){
-                            nilai = 1;
-                        }else if(i==11 && j==13)
-                        {
-                        nilai = 5;
-                        }else{
-                            nilai = 0;
-
-                        }
-
-                }else if (lv == 2){
-                    printf("");
-                }
-                P1 = Alokasi(nilai);
-                if(i==1){
-                    InsertLast(&(*L1),P1);
-                    P2 = First(*L1);
-                }
-                else{
-                    InsertLast(&L2,P1);
-                    baris(down) = P1;
-                    down = Next(down);
-                }
-            }
-            if(i>1){
-                P2 = baris(P2);
-            }
-            down = P2;
-        }
-}
 
 void map_view(sprite *s, List L){
     int x,y; //posisi awal map
@@ -176,4 +115,115 @@ void map_view(sprite *s, List L){
             P1=baris(P1);
         }
     }
+}
+
+
+/*MAke list 2*/
+void Makelist2(List *L1 , int lv){
+    List L2;
+    int i,j,b,k;
+    infotype nilai;
+    address P1,P2,down;
+
+    if(lv==1)
+    {
+        b = 20;
+        k = 20;
+    }else if(lv==2)
+    {
+        b = 22;
+        k = 30;
+
+    }else if(lv==3)
+    {
+        b = 22;
+        k = 38;
+    }
+
+        for(i=1;i<=b;i++){
+            CreateList(&L2);
+            for(j=1;j<=k;j++){
+
+                    /*Level Mudah*/
+
+                    /*Selesai Level Mudah*/
+
+
+                    /*Level Mudah*/
+                   if(lv == 1)
+                   {
+                            if(i==1 || i==b)
+                            {
+                                nilai = 2;
+                            }else if(j==1 || j==k)
+                            {
+                                nilai = 2;
+
+                            }else if( (i>=6 && i<=16) && j==4)
+                            {
+                                nilai = 2;
+                            }else if((i==6||i==7||i==8||i==9) && j==6)
+                            {
+                                nilai = 2;
+                            }else if((j==6||j==7||j==8) && i==6)
+                            {
+                                nilai = 2;
+                            }else if((i==13||i==14||i==15||i==16) && j==6)
+                            {
+                                nilai =2;
+                            }else if((j==6||j==7||j==8) && i==16)
+                            {
+                                nilai = 2;
+                            }else if((j==9||j==10||j==11||j==12)&& i==12)
+                            {
+                                nilai=2;
+                            }else if((j==9||j==12)&&i==11)
+                            {
+                                nilai=2;
+                            }else if((j==9||j==12)&&i==10)
+                            {
+                                nilai =2;
+                            }else if((j==13||j==14||j==15) && i==6)
+                            {
+                                nilai = 2;
+                            }else if((i==7||i==8||i==9) && j==15)
+                            {
+                                nilai =2;
+                            }else if((j==13||j==14||j==15) && i==16)
+                            {
+                                nilai = 2;
+                            }else if((i==13||i==14||i==15) && j==15)
+                            {
+                                nilai = 2;
+                            }else if((i>=6 && i<=16)&& j==17)
+                            {
+                                nilai =2;
+                            }else
+                            {
+                                nilai =0;
+                            }
+                   }
+ 
+                 
+                    
+
+
+
+
+                P1 = Alokasi(nilai);
+                if(i==1){
+                    InsertLast(&(*L1),P1);
+                    P2 = First(*L1);
+                }
+                else{
+                    InsertLast(&L2,P1);
+                    baris(down) = P1;
+                    down = Next(down);
+                }
+            }
+            if(i>1){
+                P2 = baris(P2);
+            }
+            down = P2;
+        }
 }
