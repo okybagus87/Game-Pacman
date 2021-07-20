@@ -202,7 +202,100 @@ void Makelist2(List *L1 , int lv){
                             {
                                 nilai =0;
                             }
-                   }
+                   }/*Level Sedang*/
+                    else if(lv==2)
+                    {
+                            if(i==1 || i==b)
+                            {
+                                nilai =2;
+                            }else if(j==1 || j==k)
+                            {
+                                nilai =2;
+                            }else if((j<=12 && j>=5) && i==5)
+                            {
+                                nilai =2;
+                            }else if((j==5 || j==12) && i==6)
+                            {
+                                nilai=2;
+                            }else if((j==5 || j==12) && i==7)
+                            {
+                                nilai = 2;
+                            }else if((j==5 || j==6 || j==7) && i==8)
+                            {
+                                nilai = 2;
+                            }else if((j==10 || j==11 || j==12) && i==8)
+                            {
+                                nilai = 2;
+                            }else if((i>=9 && i<=11)&& j==7)
+                            {
+                                nilai =2;
+                            }else if((i>=9 && i<=11)&& j==10)
+                            {
+                                nilai = 2;
+                            }else if((j>=19 && j<=26) && i==5)
+                            {
+                                nilai =2;
+                            }else if((j==19 || j==26) && i==6)
+                            {
+                                nilai = 2;
+                            }else if((j==19 || j==26) && i==7)
+                            {
+                                nilai =2;
+                            }else if((j>=19 &&j<=21)&& i==8)
+                            {
+                                nilai =2;
+                            }else if((j>=24 && j<=26) && i==8)
+                            {
+                                nilai = 2;
+                            }else if((j==21 || j==24)&& i==9)
+                            {
+                                nilai =2;
+                            }else if((j==21 || j==24) && i==10)
+                            {
+                                nilai =2;
+                            }else if((j==21 || j==24) && i==11)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=21) && j==5)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=18) && j==7)
+                            {
+                                nilai =2;
+                            }else if((j>=7 && j<=10) && i==18)
+                            {
+                                nilai = 2;
+                            }else if((i>=14 && i<=18) && j==10)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=18) && j==13)
+                            {
+                                nilai =2;
+                            }else if((j>=14 && j<=17)&&i==18)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=18) && j==18)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=18) && j==21)
+                            {
+                                nilai =2;
+                            }else if((j==22||j==23) && i==18)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=18) && j==24)
+                            {
+                                nilai =2;
+                            }else if((i>=14 && i<=21)&&j==26)
+                            {
+                                nilai =2;
+                            }
+
+                            else
+                            {
+                                nilai = 0;
+                            }
+                    }
  
                  
                     
