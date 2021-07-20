@@ -96,16 +96,24 @@ void map_view(sprite *s, List L){
             P2=P1;
             while (P2!=Nil){
                 if(Info(P2) == 2){
-                    //readimagefile("gambar//wall.jpg",x,y,x+gridSize,y+gridSize);
                     putimage(x,y,s->WallMap,COPY_PUT);
-                }else if(Info(P2) == 0){
-                  
-                    putimage(x,y,s->Food,COPY_PUT);
-                }else if (Info(P2) == 4){
-                
+                //}else if(Info(P2) == 0){
+                   // putimage(x,y,s->Food,COPY_PUT);
+                }else if (Info(P2) == 4 && Ranpos==4 ){
+
                     putimage(x,y,s->bonus,COPY_PUT);
-                }else if (Info(P2)== 5){
-                    putimage(x,y,s->pacman,COPY_PUT);
+                }else if (Info(P2) == 6 && Ranpos==6 )
+                {
+                    putimage(x,y,s->bonus,COPY_PUT);
+                }else if (Info(P2) == 8 && Ranpos==8)
+                {
+                    putimage(x,y,s->bonus,COPY_PUT);
+                }else if (Info(P2) == 10 && Ranpos==10)
+                {
+                    putimage(x,y,s->bonus,COPY_PUT);
+                }
+                else{
+                    putimage(x,y,s->Food,COPY_PUT);
                 }
                 x += 50;
                 printf ("%d ",Info(P2));
