@@ -65,7 +65,7 @@ sprite *sprite_create(int gridSize)
         cleardevice();
 
         //Sprite pacman
-        readimagefile("pacman hantu.gif",x,y,x+gridSize,y+gridSize);
+        readimagefile("image/pacman/pacright.jpg",x,y,x+gridSize,y+gridSize);
         s->pacman=malloc(tempSizing);
         cleardevice();
 
@@ -107,6 +107,9 @@ void Makelist(List *L1 , int lv){
                             nilai = 1;
                         }else if((i >=4 || i <= 16) && (j >= 8 || j == 21)){
                             nilai = 1;
+                        }else if(i==11 && j==13)
+                        {
+                        nilai = 5;
                         }else{
                             nilai = 0;
 
@@ -155,7 +158,10 @@ void map_view(sprite *s, List L){
                 }else if (Info(P2) == 4){
                     //readimagefile("gambar//bonus.gif",x,y,x+gridSize,y+gridSize);
                     putimage(x,y,s->bonus,COPY_PUT);
-                }/*else if(Info(P2) == 6){
+                }else if (Info(P2)== 5){
+                    putimage(x,y,s->pacman,COPY_PUT);
+                }
+                /*else if(Info(P2) == 6){
                     putimage(x,y,pick->power_pelet,COPY_PUT);
                 }else if(Info(P2) == 8){
                     putimage(x,y,pick->bonus,COPY_PUT);
