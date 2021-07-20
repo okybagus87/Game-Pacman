@@ -71,11 +71,49 @@ void menu_utama() //MAIN DISPLAY
         if((x>255 && x<255+167) && (y>500 && y<600)){  //button 1
             cleardevice();
             soundPlayGame();
-            //tampilaja();
-            lv = 1 ;
-            cleardevice();
-            Makelist(&maze,lv);
-            map_view(gambar,maze);
+            /*Memilih Level dari map*/
+            while(1)
+            {
+                getmouseclick(WM_LBUTTONDOWN,x,y);
+                if((x>100 && x<100+167) && (y>200 && y<300))
+                {
+                    cleardevice();
+                    soundPlayGame();
+                    lv =1;
+                    Makelist2(&maze,lv);
+                    map_view(gambar,maze);
+                    getch();
+                    DelAll(&maze);
+                    cleardevice();
+                    goto menu;
+                }else if((x>500 && x<500+167) && (y>200 && y<300))
+                {
+                    cleardevice();
+                    soundPlayGame();
+                    lv=2;
+                    Makelist2(&maze,lv);
+                    map_view(gambar,maze);
+                    getch();
+                    DelAll(&maze);
+                    cleardevice();
+                    goto menu;
+                }else if((x>900 && x<900+167) && (y>200 && y<300))
+                {
+                    cleardevice();
+                    soundPlayGame();
+                    lv=3;
+                    Makelist2(&maze,lv);
+                    map_view(gambar,maze);
+                    getch();
+                    DelAll(&maze);
+                    cleardevice();
+                    goto menu;
+                }else if((x>500 && x<500+167) && (y>400 && y<500))
+                {
+                    cleardevice();
+                    goto menu;
+                }
+            }
             getch();
             cleardevice();
             goto menu;
