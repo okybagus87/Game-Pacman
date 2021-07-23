@@ -5,15 +5,6 @@
 #include <conio.h>
 #include<graphics.h>
 
-typedef struct pos *addr;
-typedef struct pos{
-	int info;
-	pos atas;
-	pos bawah;
-	pos kanan;
-	pos kiri;
-}pos;
-
 void move(); // PERGERAKAN MAPS
 void limit(); // BATAS PACMAN DENGAN DINDING
 void ceksprite(int sprite); // PERGERAKAN PACMAN
