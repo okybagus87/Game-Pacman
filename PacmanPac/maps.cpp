@@ -102,7 +102,7 @@ void background(int i, int j){
 }
 // GAMBAR UNTUK DINDING
 void dinding(int i, int j){
-	readimagefile("assets//img//game//maps//dinding.jpg", img_mtrx);
+	readimagefile("assets//img//game//maps//dinding2.jpg", img_mtrx);
 }
 // GAMBAR UNTUK SUPLEMEN
 void suplemen(int i, int j){
