@@ -1,5 +1,12 @@
-//#ifndef maps_H
-//#define maps_H
+#ifndef maps_H
+#define maps_H
+
+typedef struct maps *linkNode;
+typedef struct maps{
+    int data;
+    linkNode bawah;
+    linkNode kanan;
+} NodeKasir;
 
 int maps_level(int l, int a, int b); // MEMBUAT MAPS
 void maps(int mat, int baris, int kolom); // GAMBAR UNTUK MAPS
@@ -13,4 +20,4 @@ void samping(int i, int j, int p); // GAMBAR UNTUK PACMAN KE SAMPING
 void bawah(int i, int j, int p); // GAMBAR UNTUK PACMAN KE BAWAH
 void pelet(int i, int j); // GAMBAR UNTUK PELET
 
-//#endif
+#endif
