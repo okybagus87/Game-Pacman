@@ -380,4 +380,123 @@ void moveGhostY(int situasi,int gx, int gy){
         gy+40;
     }
 }*/
+/* typedef struct data{	//Komposit berfungsi sebagai variabel penampung dari File rekap.DAT
+	char name[49];
+	int hscore;
+}dataScore;
 
+typedef data infotype;
+typedef struct TreeNode *Addr;
+typedef struct TreeNode{
+	infotype info;
+	Addr rs;
+	Addr ls;
+}bTreeNode;
+
+int AddingScore(int variety){
+	int skor;
+	if(variety==0){
+		skor = 1;
+	}else if(variety==1){
+		skor = 2;
+	}else if(variety==2){
+		skor = 3;	
+	}
+	return skor;
+}
+
+Addr NewNode(infotype A){
+	Addr P;
+	P=(Addr)malloc(sizeof(TreeNode));
+	info(P)=A.hscore;
+	strcpy(nameinf(P),A.name);
+	rs(P)=NULL;
+	ls(P)=NULL;
+	return P;
+}
+
+int isTreeEmpty(Addr tr){
+	return tr == NULL;
+}
+
+void InOrder(Addr tr){ //update
+	char highscoreStr[10];	
+	if(tr != NULL){
+		InOrder(ls(tr));
+		//printf(" %s - %d \n",nameinf(tr),info(tr)); //belum bisa menampilkan ke windows
+		strcpy(printRekap[index++].name, tr->info.name);
+		printRekap[index2++].hscore = tr->info.hscore;
+		InOrder(rs(tr));
+	}	
+	
+}
+
+void InsertNode(Addr *tr, infotype A){ //menambahkan data highscore ke tree update
+	Addr TNode = NULL,temp;
+	TNode = NewNode(A);
+	
+	if(isTreeEmpty(*tr))
+	{
+		*tr = TNode;
+	}
+	else
+	{
+		temp = *tr;
+		bool selesai = false;
+		
+		while(!selesai)
+		{	
+			if(A.hscore > info(temp))
+			{
+				if(isTreeEmpty(ls(temp)))
+				{
+					ls(temp) = TNode;
+					selesai = true;
+				}
+				else
+				{
+					temp = ls(temp);
+				}
+			}
+			else if (A.hscore < info(temp))
+			{
+				if(isTreeEmpty(rs(temp)))
+				{
+					rs(temp) = TNode;
+					selesai = true;
+				}
+				else
+				{
+					temp = rs(temp);
+				}
+			}
+			else if (A.hscore = info(temp))
+			{
+				if(strcmp(A.name,nameinf(temp)) < 0)
+				{
+					if(isTreeEmpty(rs(temp)))
+					{
+						rs(temp) = TNode;
+						selesai = true;
+					}
+					else
+					{
+						temp = rs(temp);
+					}
+				}
+				else
+				{
+					if(isTreeEmpty(ls(temp)))
+					{
+						ls(temp) = TNode;
+						selesai = true;
+					}
+					else
+					{
+						temp = ls(temp);
+					}
+				}
+			}
+		}
+	}
+}*/
