@@ -149,3 +149,57 @@
 1626032712 source:f:\tugas akhir 2\ksg\cadang\ppl 2\palletegame\palleteskorpacman.cpp
 	"PalleteSkorPacman.h"
 
+1626088718 source:c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\linkedlist.cpp
+	<stdio.h>
+	"LinkedList.h"
+
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\linkedlist.h
+	"boolean.h"
+	<limits.h>
+	<malloc.h>
+
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\boolean.h
+
+1626088718 source:c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\main.cpp
+	"header.h"
+
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\header.h
+	<stdio.h>
+	<graphics.h>
+	<conio.h>
+	<time.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<graphics.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<mmsystem.h>
+	"display.h"
+	"PalleteSkorPacman.h"
+	"sound.h"
+	"LinkedList.h"
+	"boolean.h"
+
+1627039236 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\display.h
+	"header.h"
+
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\palleteskorpacman.h
+	"header.h"
+	"LinkedList.h"
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<graphics.h>
+	<time.h>
+	<stdlib.h>
+	<iostream>
+
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\sound.h
+	"header.h"
+	<mmsystem.h>
+
+1626088718 source:c:\users\kysuna\onedrive\documents\github\game-pacman\palletegame\sound.cpp
+	"sound.h"
+

@@ -138,7 +138,7 @@
 1625488255 source:d:\kuliah\semester 2\ppl\5 juli 2021\pacmanpac\maps.cpp
 	"header/header.h"
 
-1625445976 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\control.cpp
+1627611446 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\control.cpp
 	"header/header.h"
 
 1625362758 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\header.h
@@ -155,7 +155,7 @@
 
 1624866744 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\control.h
 
-1624867104 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\maps.h
+1627387007 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\maps.h
 
 1625436606 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\enemy.h
 	<iostream>
@@ -165,15 +165,15 @@
 	<stdio.h>
 	<conio.h>
 
-1624867166 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\menu.h
+1626088718 c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\header\menu.h
 
-1625529101 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\main.cpp
+1626088718 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\main.cpp
 	"header/header.h"
 
-1625529878 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\maps.cpp
+1627387741 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\maps.cpp
 	"header/header.h"
 
-1624867088 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\menu.cpp
+1626088718 source:c:\users\kysuna\onedrive\documents\github\game-pacman\pacmanpac\menu.cpp
 	"header/header.h"
 
 1625534657 source:d:\clone github\game-pacman\pacmanpac\control.cpp
