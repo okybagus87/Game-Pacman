@@ -105,8 +105,9 @@ void menu_utama(){
 			
 			while(1){
 				about();
+				readimagefile("assets//img//menu//back.gif",150,600,150+150,50+600);
 				getmouseclick(WM_LBUTTONDOWN, x, y);
-				if((x>30 && x<30+150)&&(y>650 && y<700)){
+				if((x>150 && x<150+150)&&(y>600 && y<650)){
 					goto menu; // KEMBALI KE MENU
 				}
 			}
