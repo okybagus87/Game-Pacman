@@ -91,7 +91,7 @@ void move(bool up, bool down, bool left, bool right){
 			}
 			break;
 	}
-	printf("Skor : %d\n", skor);
+	//printf("Skor : %d\n", skor);
 }
 
 //void TampilSkor()
@@ -134,8 +134,12 @@ void SkorPemain(int skor)
 void tempp(){
 	temp = A[i][j];
 	if(temp == 5){
+		skor = skor +1; //apabila menyentuh pelet biasa
+       		SkorPemain(skor); //Memanggil modul SkorPemain agar menampilkan skor pada program
 		temp = 0;
 	}else if (temp == 6){
+		skor = skor + 10; //apabila menyentuh pelete bonus
+	   	 SkorPemain(skor);
 	    temp = 0;
 	}
 }
