@@ -116,3 +116,10 @@ void splashscreen(){
 void how(){
 	readimagefile("assets//img//menu//how1.jpg",fullscreen);
 }
+
+//MENAMPILKAN GAMBAR UNTUK MENU ABOUT US
+void about()
+{
+    readimagefile("assets//img//menu//namakelompok.jpg",fullscreen);
+}
+
