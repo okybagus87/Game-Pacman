@@ -1,7 +1,7 @@
 #include"header/header.h"
 
 int A[BRS][KLM];
-int i,j,e,temp,k,temp2;
+int i,j,e,temp,k,temp2, skor = 0;
 int i_g,j_g,g_e,g_temp,g_k,g_temp2;
 void DrawGhost(int i_g, int j_g, int p_g);
 void *buff;
@@ -52,6 +52,9 @@ void limit(){
     }
 
 	if(A[i][j+1]==0 || A[i][j+1]==5 || A[i][j+1]==6 || A[i][j+1]==10){
+        if(A[i][j+1] == 5){
+            skor++;
+        }
 		kanan = true;
 	}else{
 	    kanan = false;
@@ -88,6 +91,7 @@ void move(bool up, bool down, bool left, bool right){
 			}
 			break;
 	}
+	printf("Skor : %d\n", skor);
 }
 
 // MEMANGGIL GAMBAR PACMAN
@@ -400,7 +404,7 @@ int AddingScore(int variety){
 	}else if(variety==1){
 		skor = 2;
 	}else if(variety==2){
-		skor = 3;	
+		skor = 3;
 	}
 	return skor;
 }
@@ -420,21 +424,21 @@ int isTreeEmpty(Addr tr){
 }
 
 void InOrder(Addr tr){ //update
-	char highscoreStr[10];	
+	char highscoreStr[10];
 	if(tr != NULL){
 		InOrder(ls(tr));
 		//printf(" %s - %d \n",nameinf(tr),info(tr)); //belum bisa menampilkan ke windows
 		strcpy(printRekap[index++].name, tr->info.name);
 		printRekap[index2++].hscore = tr->info.hscore;
 		InOrder(rs(tr));
-	}	
-	
+	}
+
 }
 
 void InsertNode(Addr *tr, infotype A){ //menambahkan data highscore ke tree update
 	Addr TNode = NULL,temp;
 	TNode = NewNode(A);
-	
+
 	if(isTreeEmpty(*tr))
 	{
 		*tr = TNode;
@@ -443,9 +447,9 @@ void InsertNode(Addr *tr, infotype A){ //menambahkan data highscore ke tree upda
 	{
 		temp = *tr;
 		bool selesai = false;
-		
+
 		while(!selesai)
-		{	
+		{
 			if(A.hscore > info(temp))
 			{
 				if(isTreeEmpty(ls(temp)))
