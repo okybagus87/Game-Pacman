@@ -1,5 +1,18 @@
 #include"header/header.h"
 
+//Membuat Posisi Random Pada Pelet
+int RandomPos()
+{
+    int i, s;
+    srand(time(NULL));
+    for(i = 0; i < 450; i++) {
+
+        s = (rand() % 4) * 2 + 4 ; //akan menghasilkan 4,6,8,10
+        //printf(" %d ",s);
+    }
+      return s;
+}
+
 
 // MEMBUAT 3 MAPS
 int maps_level(int l, int a, int b){
