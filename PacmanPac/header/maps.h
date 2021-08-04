@@ -7,7 +7,7 @@ typedef struct maps{
     linkNode bawah;
     linkNode kanan;
 } NodeKasir;
-
+int RandomPos();//MEMPOSISIKAN SECARA RANDOM PADA PELET
 int maps_level(int l, int a, int b); // MEMBUAT MAPS
 void maps(int mat, int baris, int kolom); // GAMBAR UNTUK MAPS
 void pelet(int mat, int baris, int kolom); // GAMBAR UNTUK PELET
