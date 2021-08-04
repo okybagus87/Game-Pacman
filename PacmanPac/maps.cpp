@@ -80,18 +80,25 @@ int maps_level(int l, int a, int b){
 }
 // MEMBERI GAMBAR UNTUK MAPSNYA
 void maps(int mat, int baris, int kolom){
+    //PENAMPUNG NILAI RANDOM PEMOSISIAN DARI PELET
+    int Pos = RandomPos();
+
 	if(mat==0){
 		background(baris, kolom);
-	}
-	if(mat==1){
+	}else if(mat==1){
 		dinding(baris, kolom);
-	}
-	if(mat==5){
+	}else if(mat==4 && Pos ==4){
+		suplemen(baris, kolom);
+	}else if(mat==6 && Pos ==6){
+		suplemen(baris, kolom);
+	}else if(mat==8 && Pos ==8){
+		suplemen(baris, kolom);
+	}else if(mat==10 && Pos ==10){
+		suplemen(baris, kolom);
+	}else{
 		pelet(baris, kolom);
 	}
-	if(mat==6){
-		suplemen(baris, kolom);
-	}
+
 }
 
 // MODUL GAMBAR UNTUK PELET
