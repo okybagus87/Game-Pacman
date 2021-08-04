@@ -94,6 +94,8 @@ void move(bool up, bool down, bool left, bool right){
 	printf("Skor : %d\n", skor);
 }
 
+//void TampilSkor()
+
 // MEMANGGIL GAMBAR PACMAN
 void ceksprite(int sprite, int baris, int kolom){
 	if(sprite==0){
