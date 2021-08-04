@@ -203,82 +203,30 @@ void sc_lv(int l){
 
 //FUNGSI ENEMY
 
-int checkPosisiPac(int i,int j,int i_g, int j_g){
-    // timur laut
-    /*if ( i>i_g && j<j_g ){
-            if (A[i_g][j_g-1] == 0){j_g--;return j_g;}
-            else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
-    }*/
-    // utara
-    if (i>i_g && j ==j_g){
-        if (A[i_g+1][j_g] == 0){i_g++;return i_g;}
-        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
-        else if (A[i_g][j_g+1] == 0) {j_g++;return j_g;}
-    }/*
-    //barat laut
-     else if (i>i_g && j>j_g ){
-        if (A[i_g+1][j_g] == 0){i_g++;return i_g;}
-        else if (A[i_g][j_g+1] == 0) {j_g++;return j_g;}
-        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
-     }*/
-     //barat
-      else if (i == i_g && j > j_g){
-        if (A[i_g][j_g+1] == 0){j_g++;return j_g;}
-        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
-        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
-     }/*
-     //barat daya
-     else if (i < i_g && j>j_g){
-        if (A[i_g][j_g+1] == 0){j_g++;return j_g;}
-        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
-        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
-     }*/
-     //selatan
-     else if (i<j_g && j==j_g){
-        if (A[i_g-1][j_g] == 0){i_g--;return i_g;}
-        else if (A[i_g][j_g-1] == 0) {j_g--;return i_g;}
-        else if (A[i_g][i_g+1] == 0) {j_g++;return j_g;}
-     }/*
-     //tenggara
-     else if (i<i_g && j<j_g){
-        if (A[i_g-1][j_g] == 0){i_g--;return i_g;}
-        else if (A[i_g][j_g-1] == 0) {j_g--;return j_g;}
-        else if (A[i_g][j_g+1] == 0) {i_g++;return j_g;}
-     }*/
-     //timur
-     else if (i==i_g && j<j_g){
-        if (A[i_g][j_g-1] == 0){j_g--;return j_g;}
-        else if (A[i_g-1][j_g] == 0) {i_g--;return i_g;}
-        else if (A[i_g+1][j_g] == 0) {i_g++;return i_g;}
-     }
-}
-
 
 int YGhostDir(int i,int i_g,int j_g, int j){
 
     if (( j_g != j)&& (i > i_g)){
-        i_g++;
+      return i_g++;
     } else if (( j_g != j)&& (i < i_g)){
-        i_g--;
+      return i_g--;
     }else if (( j_g == j)&& (i > i_g)){
-        i_g++;
+      return i_g++;
     }else if (( j_g == j)&& (i < i_g)){
-        i_g--;
+      return i_g--;
     }
-    return i_g;
 }
 
 int XGhostDir(int i,int i_g, int j, int j_g){
     if ((i != i_g)&&(j > j_g)){
-        j_g++;
+       return j_g++;
     } else if ((i != i_g)&&(j < j_g)){
-        j_g--;
+       return j_g--;
     }else if ((i == i_g) && (j > j_g)){
-        j_g++;
+       return j_g++;
     }else if ((i == i_g) && (j < j_g)){
-        j_g--;
+       return j_g--;
     }
-    return j_g;
 }
 
 
@@ -309,13 +257,13 @@ void Glimit(){
 	Gmove(g_up,g_down,g_right,g_left);
 }
 void Gmove(bool g_up, bool g_down, bool g_left, bool g_right){
-	if(g_up){
+    if(g_up){
         YGhostDir(i,i_g, j,j_g);
     }if(g_down){
         YGhostDir(i,i_g, j,j_g);
-	}if(g_right){
-        }XGhostDir(i,i_g,j,j_g);
-    if(g_left){
+    }if(g_right){
+        XGhostDir(i,i_g,j,j_g);
+    }if(g_left){
         XGhostDir(i,i_g,j,j_g);
     }
 }
@@ -354,54 +302,7 @@ void Gmaping(){
 	i_g=8;
 	j_g=8;
 }
-/*
-int kondisi(int px, int py, int gx, int gy){
-    int situasi;
-    px = i;
-    py  = j;
 
-    if((px>=gx)&&(py<=gy)){
-        situasi = 1;
-    }
-    if((px<=gx)&&(py>=gy)){
-        situasi = 2;
-    }
-    if((px<=gx)&&(py<=gy)){
-        situasi = 3;
-    }
-    if((px>=gx)&&(py>=gy)){
-        situasi = 4;
-    }
-    return situasi;
-}
-void moveGhostX(int situasi,int gx, int gy){
-    if(situasi = 1){
-        gx+40;
-    }
-    if(situasi = 2){
-        gy-40;
-    }
-    if(situasi = 3){
-        gx-40;
-    }
-    if(situasi = 4){
-        gx+40;
-    }
-}
-void moveGhostY(int situasi,int gx, int gy){
-    if(situasi = 1){
-        gy+40;
-    }
-    if(situasi = 2){
-        gy-40;
-    }
-    if(situasi = 3){
-        gy-40;
-    }
-    if(situasi = 4){
-        gy+40;
-    }
-}*/
 /* typedef struct data{	//Komposit berfungsi sebagai variabel penampung dari File rekap.DAT
 	char name[49];
 	int hscore;
