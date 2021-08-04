@@ -102,8 +102,9 @@ void menu_utama(){
 				}
 			}
 		}else if((x>755 && x<755+167)&&(y>430 && y<530)){ // DAERAH YANG BISA DIJANGKAU UNTUK KEMBALI KE MENU ABOUT US
-			//about();
+			
 			while(1){
+				about();
 				getmouseclick(WM_LBUTTONDOWN, x, y);
 				if((x>30 && x<30+150)&&(y>650 && y<700)){
 					goto menu; // KEMBALI KE MENU
