@@ -52,9 +52,6 @@ void limit(){
     }
 
 	if(A[i][j+1]==0 || A[i][j+1]==5 || A[i][j+1]==6 || A[i][j+1]==10){
-        if(A[i][j+1] == 5){
-            skor++;
-        }
 		kanan = true;
 	}else{
 	    kanan = false;
