@@ -1,6 +1,6 @@
 //#ifndef control_H
 //#define control_H
-
+void SkorPemain(int skor);//MENAMPILKAN SKOR
 void mapMaze(int l); // MEMANGGIL MAPS DAN MENAMPILKANNYA
 void tempMaps(int temp, int baris, int kolom); // MEMBUAT TEMPORARY MAPS
 void move(bool atas, bool bawah, bool kiri, bool kanan); // PERGERAKAN MAPS
