@@ -118,6 +118,18 @@ void ceksprite(int sprite, int baris, int kolom){
 	}
 }
 
+//MENAMPILKAN SKOR PEMAIN PADA PERMAINAN
+void SkorPemain(int skor)
+{
+    char msg[13];
+	settextstyle(2, 0, 8);
+	sprintf(msg, "score \n %d", skor);
+	outtextxy(900,280,msg);
+
+
+}
+
+
 // MENUKAR / MENGUBAH GAMBAR KETIKA TELAH MEMAKAN PELET ATAUPUN SUPLEMEN
 void tempp(){
 	temp = A[i][j];
