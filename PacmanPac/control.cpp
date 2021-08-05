@@ -23,12 +23,12 @@ void tempMaps(int temp, int baris, int kolom){
 	if(temp==0){
 		readimagefile("assets//img//game//maps//black.jpg", 40*kolom-1,40*baris,40+40*kolom-1,40+40*baris);
 	}
-	if(temp==3){
-		readimagefile("assets//img//game//maps//black.jpg", 40*kolom-1,40*baris,40+40*kolom-1,40+40*baris);
-	}
-	if(temp==4){
-		readimagefile("assets//img//game//maps//black.jpg", 40*kolom-1,40*baris,40+40*kolom-1,40+40*baris);
-	}
+	//if(temp==3){
+	//	readimagefile("assets//img//game//maps//black.jpg", 40*kolom-1,40*baris,40+40*kolom-1,40+40*baris);
+	//}
+	//if(temp==4){
+	//	readimagefile("assets//img//game//maps//black.jpg", 40*kolom-1,40*baris,40+40*kolom-1,40+40*baris);
+	//
 }
 
 // MENGATUR BATASAN PACMAN DENGAN DINDING
