@@ -300,123 +300,84 @@ void Gmaping(){
 	j_g=8;
 }
 
-/* typedef struct data{	//Komposit berfungsi sebagai variabel penampung dari File rekap.DAT
-	char name[49];
-	int hscore;
-}dataScore;
-
-typedef data infotype;
-typedef struct TreeNode *Addr;
-typedef struct TreeNode{
-	infotype info;
-	Addr rs;
-	Addr ls;
-}bTreeNode;
-
-int AddingScore(int variety){
-	int skor;
-	if(variety==0){
-		skor = 1;
-	}else if(variety==1){
-		skor = 2;
-	}else if(variety==2){
-		skor = 3;
-	}
-	return skor;
+void entry_score(){
+	/*Score data;
+	FILE *f_score; 
+ 	if ((f_score=fopen("SCORE.DAT", "ab+"))==NULL) 
+ 	{ 
+	 	printf ("File tidak dapat dibuka\n"); 
+		exit(1); 
+	} 
+	fflush(stdin); 
+ 	printf("Nama : "); scanf("%s",&data.name);
+ 	fflush(stdin); 
+ 	data.hscore = skor;
+	printf("Skor : %d",data.hscore);
+ 	fprintf(f_score, "%s %d", data.name, data.hscore); 
+ 	fclose(f_score);*/ 
 }
 
-Addr NewNode(infotype A){
-	Addr P;
-	P=(Addr)malloc(sizeof(TreeNode));
-	info(P)=A.hscore;
-	strcpy(nameinf(P),A.name);
-	rs(P)=NULL;
-	ls(P)=NULL;
-	return P;
+void Tampil_score(){
+	/*Score data; 
+ 	FILE *f_score; 
+ 	if ((f_score=fopen("SCORE.DAT", "rb"))==NULL) 
+ 	{ 
+ 		printf ("File tidak dapat dibuka\n"); 
+ 		exit(1); 
+	} 
+ 	printf ("Nama Score \n"); 
+ 	while (!feof(f_score)) 
+ 	{ 
+ 		fscanf(f_score,"%s %d", &data.name, &data.hscore); 
+ 		printf("%s %d\n", data.name, data.hscore); 
+ 	} 
+ 	fclose(f_score);*/
+	
 }
 
-int isTreeEmpty(Addr tr){
-	return tr == NULL;
+void sort_score(){
+	/*FILE *f_score;
+	long p=0, q;
+	char str_score[10] = {0};
+	char tmp_score[10] = {0};
+	Score data, Temp;
+	
+	if((f_score=fopen("SCORE.DAT","rb+"))==NULL){
+		printf("File tidak dapat dibuka\n");
+		exit(1);
+	}
+	while(!feof(f_score)){
+		itoa(data.hscore, str_score, 10);
+		itoa(Temp.hscore, tmp_score, 10);
+		fseek(f_score, (p* (sizeof(Score)+1))+p, SEEK_SET); 
+		fscanf(f_score,"%s %d", &data.name, &data.hscore); 
+ 		q = p;
+		while(!feof()){
+			q++;
+			fseek(f_score, (q*(sizeof(Score)+1))+q, SEEK_SET); 
+ 			fscanf(f_score,"%s %d",&Temp.name,&Temp.hscore); 
+ 			if ((strcmp(str_score,tmp_score)>0)) 
+ 			{ 
+ 				fseek(f_score, p*(sizeof(Score)+1)+p, SEEK_SET); 
+ 				fprintf(f_score," %s %d",Temp.name,Temp.hscore); 
+ 				fseek(f_score, q*(sizeof(Score)+1)+q, SEEK_SET); 
+ 				fprintf(f_score, " %s %d", data.name, data.hscore); 
+ 				strcpy(data.name,Temp.name); 
+ 				strcpy(data.hscore,Temp.hscore); 
+ 			} 
+ 		} 
+ 		if (p < q) 
+ 		{ 
+ 			fseek(f_score, 0, SEEK_SET); 
+ 			p++; 
+ 		} 
+ 	} 
+ 	fclose(f_score); 
+ 	Tampil_score(); */
 }
 
-void InOrder(Addr tr){ //update
-	char highscoreStr[10];
-	if(tr != NULL){
-		InOrder(ls(tr));
-		//printf(" %s - %d \n",nameinf(tr),info(tr)); //belum bisa menampilkan ke windows
-		strcpy(printRekap[index++].name, tr->info.name);
-		printRekap[index2++].hscore = tr->info.hscore;
-		InOrder(rs(tr));
-	}
-
+void rekap_score(){
+	entry_score();
+	sort_score();
+	break;
 }
-
-void InsertNode(Addr *tr, infotype A){ //menambahkan data highscore ke tree update
-	Addr TNode = NULL,temp;
-	TNode = NewNode(A);
-
-	if(isTreeEmpty(*tr))
-	{
-		*tr = TNode;
-	}
-	else
-	{
-		temp = *tr;
-		bool selesai = false;
-
-		while(!selesai)
-		{
-			if(A.hscore > info(temp))
-			{
-				if(isTreeEmpty(ls(temp)))
-				{
-					ls(temp) = TNode;
-					selesai = true;
-				}
-				else
-				{
-					temp = ls(temp);
-				}
-			}
-			else if (A.hscore < info(temp))
-			{
-				if(isTreeEmpty(rs(temp)))
-				{
-					rs(temp) = TNode;
-					selesai = true;
-				}
-				else
-				{
-					temp = rs(temp);
-				}
-			}
-			else if (A.hscore = info(temp))
-			{
-				if(strcmp(A.name,nameinf(temp)) < 0)
-				{
-					if(isTreeEmpty(rs(temp)))
-					{
-						rs(temp) = TNode;
-						selesai = true;
-					}
-					else
-					{
-						temp = rs(temp);
-					}
-				}
-				else
-				{
-					if(isTreeEmpty(ls(temp)))
-					{
-						ls(temp) = TNode;
-						selesai = true;
-					}
-					else
-					{
-						temp = ls(temp);
-					}
-				}
-			}
-		}
-	}
-}*/
