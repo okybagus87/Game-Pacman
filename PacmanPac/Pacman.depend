@@ -214,3 +214,41 @@
 1625535736 source:d:\clone github\game-pacman\pacmanpac\menu.cpp
 	"header/header.h"
 
+1628121322 source:d:\1. penting\github\game-pacman\pacmanpac\control.cpp
+	"header/header.h"
+
+1628121322 d:\1. penting\github\game-pacman\pacmanpac\header\header.h
+	<stdio.h>
+	<graphics.h>
+	<windows.h>
+	<process.h>
+	<stdbool.h>
+	<time.h>
+	"control.h"
+	"maps.h"
+	"enemy.h"
+	"menu.h"
+
+1628125423 d:\1. penting\github\game-pacman\pacmanpac\header\control.h
+
+1628121322 d:\1. penting\github\game-pacman\pacmanpac\header\maps.h
+
+1628121322 d:\1. penting\github\game-pacman\pacmanpac\header\enemy.h
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1628121322 d:\1. penting\github\game-pacman\pacmanpac\header\menu.h
+
+1628121322 source:d:\1. penting\github\game-pacman\pacmanpac\main.cpp
+	"header/header.h"
+
+1628121322 source:d:\1. penting\github\game-pacman\pacmanpac\maps.cpp
+	"header/header.h"
+
+1628121322 source:d:\1. penting\github\game-pacman\pacmanpac\menu.cpp
+	"header/header.h"
+

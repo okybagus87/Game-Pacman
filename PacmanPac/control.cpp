@@ -159,8 +159,8 @@ void maping(){
 			maps(A[i][j],i,j);
 		}
 	}
-	i=11;
-	j=16;
+	i=10;
+	j=13;
 }
 
 // FITUR PAUSE PADA PACMAN
@@ -302,37 +302,37 @@ void Gmaping(){
 
 void entry_score(){
 	/*Score data;
-	FILE *f_score; 
- 	if ((f_score=fopen("SCORE.DAT", "ab+"))==NULL) 
- 	{ 
-	 	printf ("File tidak dapat dibuka\n"); 
-		exit(1); 
-	} 
-	fflush(stdin); 
+	FILE *f_score;
+ 	if ((f_score=fopen("SCORE.DAT", "ab+"))==NULL)
+ 	{
+	 	printf ("File tidak dapat dibuka\n");
+		exit(1);
+	}
+	fflush(stdin);
  	printf("Nama : "); scanf("%s",&data.name);
- 	fflush(stdin); 
+ 	fflush(stdin);
  	data.hscore = skor;
 	printf("Skor : %d",data.hscore);
- 	fprintf(f_score, "%s %d", data.name, data.hscore); 
- 	fclose(f_score);*/ 
+ 	fprintf(f_score, "%s %d", data.name, data.hscore);
+ 	fclose(f_score);*/
 }
 
 void Tampil_score(){
-	/*Score data; 
- 	FILE *f_score; 
- 	if ((f_score=fopen("SCORE.DAT", "rb"))==NULL) 
- 	{ 
- 		printf ("File tidak dapat dibuka\n"); 
- 		exit(1); 
-	} 
- 	printf ("Nama Score \n"); 
- 	while (!feof(f_score)) 
- 	{ 
- 		fscanf(f_score,"%s %d", &data.name, &data.hscore); 
- 		printf("%s %d\n", data.name, data.hscore); 
- 	} 
+	/*Score data;
+ 	FILE *f_score;
+ 	if ((f_score=fopen("SCORE.DAT", "rb"))==NULL)
+ 	{
+ 		printf ("File tidak dapat dibuka\n");
+ 		exit(1);
+	}
+ 	printf ("Nama Score \n");
+ 	while (!feof(f_score))
+ 	{
+ 		fscanf(f_score,"%s %d", &data.name, &data.hscore);
+ 		printf("%s %d\n", data.name, data.hscore);
+ 	}
  	fclose(f_score);*/
-	
+
 }
 
 void sort_score(){
@@ -341,7 +341,7 @@ void sort_score(){
 	char str_score[10] = {0};
 	char tmp_score[10] = {0};
 	Score data, Temp;
-	
+
 	if((f_score=fopen("SCORE.DAT","rb+"))==NULL){
 		printf("File tidak dapat dibuka\n");
 		exit(1);
@@ -349,30 +349,30 @@ void sort_score(){
 	while(!feof(f_score)){
 		itoa(data.hscore, str_score, 10);
 		itoa(Temp.hscore, tmp_score, 10);
-		fseek(f_score, (p* (sizeof(Score)+1))+p, SEEK_SET); 
-		fscanf(f_score,"%s %d", &data.name, &data.hscore); 
+		fseek(f_score, (p* (sizeof(Score)+1))+p, SEEK_SET);
+		fscanf(f_score,"%s %d", &data.name, &data.hscore);
  		q = p;
 		while(!feof()){
 			q++;
-			fseek(f_score, (q*(sizeof(Score)+1))+q, SEEK_SET); 
- 			fscanf(f_score,"%s %d",&Temp.name,&Temp.hscore); 
- 			if ((strcmp(str_score,tmp_score)>0)) 
- 			{ 
- 				fseek(f_score, p*(sizeof(Score)+1)+p, SEEK_SET); 
- 				fprintf(f_score," %s %d",Temp.name,Temp.hscore); 
- 				fseek(f_score, q*(sizeof(Score)+1)+q, SEEK_SET); 
- 				fprintf(f_score, " %s %d", data.name, data.hscore); 
- 				strcpy(data.name,Temp.name); 
- 				strcpy(data.hscore,Temp.hscore); 
- 			} 
- 		} 
- 		if (p < q) 
- 		{ 
- 			fseek(f_score, 0, SEEK_SET); 
- 			p++; 
- 		} 
- 	} 
- 	fclose(f_score); 
+			fseek(f_score, (q*(sizeof(Score)+1))+q, SEEK_SET);
+ 			fscanf(f_score,"%s %d",&Temp.name,&Temp.hscore);
+ 			if ((strcmp(str_score,tmp_score)>0))
+ 			{
+ 				fseek(f_score, p*(sizeof(Score)+1)+p, SEEK_SET);
+ 				fprintf(f_score," %s %d",Temp.name,Temp.hscore);
+ 				fseek(f_score, q*(sizeof(Score)+1)+q, SEEK_SET);
+ 				fprintf(f_score, " %s %d", data.name, data.hscore);
+ 				strcpy(data.name,Temp.name);
+ 				strcpy(data.hscore,Temp.hscore);
+ 			}
+ 		}
+ 		if (p < q)
+ 		{
+ 			fseek(f_score, 0, SEEK_SET);
+ 			p++;
+ 		}
+ 	}
+ 	fclose(f_score);
  	Tampil_score(); */
 }
 
